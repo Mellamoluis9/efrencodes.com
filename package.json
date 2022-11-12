@@ -1,0 +1,44 @@
+{
+	"name": "new-portfolio-2023",
+	"author": "efrencodes <efrencodes@gmail.com> (https://efrencodes.com)",
+	"version": "1.0.0",
+	"description": "A project web for tracking with nextjs.",
+	"main": "src/pages/index.tsx",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/efrencodes/new-portfolio-2023"
+	},
+	"keywords": [
+		"next",
+		"nextjs",
+		"typescript"
+	],
+	"bugs": {
+		"url": "https://github.com/efrencodes/new-portfolio-2023/issues"
+	},
+	"homepage": "https://github.com/efrencodes/new-portfolio-2023#readme",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"format": "prettier --write '{*.tsx,*.js,*.css,src/**/*.{tsx,css,js}}'"
+	},
+	"dependencies": {
+		"@stitches/react": "^1.2.8",
+		"next": "^13.0.3",
+		"pre-commit": "^1.2.2",
+		"prettier": "^2.7.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.11.9",
+		"@types/react": "18.0.25",
+		"typescript": "4.8.4"
+	},
+	"pre-commit": [
+		"format"
+	],
+	"license": "MIT"
+}
