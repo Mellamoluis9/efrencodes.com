@@ -25,6 +25,7 @@
 		"format": "prettier --write '{*.tsx,*.js,*.css,src/**/*.{tsx,css,js}}'"
 	},
 	"dependencies": {
+		"@radix-ui/react-icons": "^1.1.1",
 		"@stitches/react": "^1.2.8",
 		"next": "^13.0.3",
 		"pre-commit": "^1.2.2",
