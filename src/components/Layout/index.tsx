@@ -1,18 +1,15 @@
 import { styled } from '@stitches/react'
+import Footer from 'components/Footer'
+import NavBar from 'components/NavBar'
 
 const Container = styled('main', {})
-
-const Header = styled('header', {
-	color: '$grey600'
-})
 
 const Layout = ({ children }) => {
 	return (
 		<Container>
-			<Header>
-				<h1>Efren Martinez</h1>
-			</Header>
+			<NavBar />
 			{children}
+			<Footer />
 		</Container>
 	)
 }
