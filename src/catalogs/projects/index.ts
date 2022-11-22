@@ -1,20 +1,20 @@
-import { Project } from "types/projectType"
+import { Project } from 'types/projectType'
 
 export const project: Project[] = [
-    {
+	{
 		name: 'OCC Mundial',
-		url: 'https://www.occ.com.mx/empresas/',
+		url: 'https://www.occ.com.mx/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1658247350/efrencodes.ts/work/occ-mundial.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-occ-mundial.webp',
 			alt: 'Project - OCC Mundial'
 		},
-		tecnologies: ['• ReactJs', '• NextJs', '• Grapqhl']
+		tecnologies: ['• React', '• Nextjs', '• Grapqhl']
 	},
 	{
 		name: 'Suzuki México Autos',
 		url: 'https://www.suzuki.com.mx/autos',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1658247333/efrencodes.ts/work/suzuki.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-suzuki-mexico.webp',
 			alt: 'Project - Suzuki México Autos'
 		},
 		tecnologies: [
@@ -30,11 +30,11 @@ export const project: Project[] = [
 		name: 'Bticino México',
 		url: 'https://store.bticino.com.mx/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1658247340/efrencodes.ts/work/bticino-store.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-bticino-mexico.webp',
 			alt: 'Project - Store Bticino México'
 		},
 		tecnologies: [
-			'• VueJS',
+			'• Vuejs',
 			'• Quasar Framework',
 			'• HTML/SASS',
 			'• API Rest',
@@ -43,19 +43,18 @@ export const project: Project[] = [
 		]
 	},
 	{
-		name: 'Portafolio Web',
-		url: '#',
+		name: 'Search Pokemon',
+		url: 'https://prueba-occ-pokemon.vercel.app/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1659063057/efrencodes.ts/work/efrencodes.webp',
-			alt: 'Project - Sitio Personal'
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-pokemon.webp',
+			alt: 'Project - Pokemon Search'
 		},
 		tecnologies: [
-			'• Next.js',
-			'• TailwindCSS',
-			'• HTML',
-			'• API Routes',
 			'• JavaScript',
-			'• Markdown'
+			'• React',
+			'• React',
+			'• NES.css',
+			'• API Pokemon'
 		]
 	}
 ]
