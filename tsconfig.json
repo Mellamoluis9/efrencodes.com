@@ -19,7 +19,8 @@
 			"@stitches": ["./stitches.config.ts"],
 			"components/*": ["./components/*"],
 			"hooks/*": ["./hooks/*"],
-			"types/*": ["./types/*"]
+			"types/*": ["./types/*"],
+			"catalogs/*": ["./catalogs/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
