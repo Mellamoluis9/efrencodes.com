@@ -1,0 +1,13 @@
+/* TEAM */
+	Chef: Efren Martinez
+	Contact: efrencodes [at] gmail.com
+	Twitter: @efrencodes
+	From: Queretaro, Mexico.
+
+/* THANKS */
+
+/* SITE */
+	Last update: 2022/09/05
+	Language: Spanish
+	Doctype: NextJS, TypeScript, Stitches
+	IDE: VSCode
