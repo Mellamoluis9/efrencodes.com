@@ -9,13 +9,32 @@ import { Props } from './types'
 
 const SocialMediaButton: FC<Props> = ({ type }) => {
 	const SIZE_ICON: number = 24
+	const COLOR_ICON: string = 'rgb(112, 113, 114)'
 
 	if (type === SocialTypeEnum.GITHUB)
-		return <GitHubLogoIcon height={SIZE_ICON} width={SIZE_ICON} />
+		return (
+			<GitHubLogoIcon
+				color={COLOR_ICON}
+				height={SIZE_ICON}
+				width={SIZE_ICON}
+			/>
+		)
 	else if (type === SocialTypeEnum.LINKEDIN)
-		return <LinkedInLogoIcon height={SIZE_ICON} width={SIZE_ICON} />
+		return (
+			<LinkedInLogoIcon
+				color={COLOR_ICON}
+				height={SIZE_ICON}
+				width={SIZE_ICON}
+			/>
+		)
 	else if (type === SocialTypeEnum.TWITTER)
-		return <TwitterLogoIcon height={SIZE_ICON} width={SIZE_ICON} />
+		return (
+			<TwitterLogoIcon
+				color={COLOR_ICON}
+				height={SIZE_ICON}
+				width={SIZE_ICON}
+			/>
+		)
 }
 
 export default SocialMediaButton

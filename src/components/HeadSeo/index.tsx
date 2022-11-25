@@ -1,11 +1,10 @@
-import React, { FC } from 'react'
-import { Head } from 'next/document'
+import { FC, Fragment } from 'react'
 import { getCssText } from '@stitches'
 import { Props } from './types'
 
 const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
 	return (
-		<Head>
+		<Fragment>
 			<meta charSet="utf-8" />
 			{structuredData && (
 				<script
@@ -73,7 +72,7 @@ const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
 				id="stitches"
 				dangerouslySetInnerHTML={{ __html: getCssText() }}
 			/>
-		</Head>
+		</Fragment>
 	)
 }
 

@@ -3,12 +3,12 @@ import { createStitches } from '@stitches/react'
 export const { styled, getCssText } = createStitches({
 	theme: {
 		fonts: {
-			sans: 'Red Hat Display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+			sans: '"Inter", sans-serif'
 		},
 		colors: {
 			// background
-			primary: '#F5F8FA',
-			secundary: '#EDF1F8',
+			primary: '#2A2A2D',
+			secundary: '#F8F8F8',
 			white: '#fff',
 			black: '#000',
 			// Grey

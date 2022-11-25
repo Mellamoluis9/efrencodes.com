@@ -1,4 +1,5 @@
 import NextDocument, { Html, Main, NextScript } from 'next/document'
+import { Head } from 'next/document'
 import HeadSeo from 'components/HeadSeo'
 import { metaTags, structuredData } from 'catalogs/metatags'
 
@@ -6,7 +7,25 @@ export default class Document extends NextDocument {
 	render() {
 		return (
 			<Html lang="es">
-				<HeadSeo metaTags={metaTags} structuredData={structuredData} />
+				<Head>
+					<HeadSeo
+						metaTags={metaTags}
+						structuredData={structuredData}
+					/>
+					<link
+						rel="preconnect"
+						href="https://fonts.googleapis.com"
+					/>
+					<link
+						rel="preconnect"
+						href="https://fonts.gstatic.com"
+						crossOrigin=""
+					/>
+					<link
+						href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+						rel="stylesheet"
+					/>
+				</Head>
 				<body>
 					<Main />
 					<NextScript />
