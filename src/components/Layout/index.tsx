@@ -1,16 +1,15 @@
-import { styled } from '@stitches/react'
 import Footer from 'components/Footer'
 import NavBar from 'components/NavBar'
+import { LayoutContainer } from './styles'
+import { Props } from './types'
 
-const Container = styled('main', {})
-
-const Layout = ({ children }) => {
+const Layout = ({ children }: Props) => {
 	return (
-		<Container>
+		<LayoutContainer>
 			<NavBar />
 			{children}
 			<Footer />
-		</Container>
+		</LayoutContainer>
 	)
 }
 
