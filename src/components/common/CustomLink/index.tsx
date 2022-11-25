@@ -1,12 +1,8 @@
-import React from 'react'
+import { FC } from 'react'
 import { LinkNormal } from './styles'
+import { Props } from './types'
 
-type Props = {
-	href?: string
-	children: React.ReactNode
-}
-
-const CustomLink = ({ href = '#', children }: Props) => {
+const CustomLink: FC<Props> = ({ href = '#', children }) => {
 	return (
 		<LinkNormal href={href} target="_blank" rel="noopener noreferrer">
 			{children}

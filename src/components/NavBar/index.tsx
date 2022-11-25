@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { NavBar as Container, IconsContainer } from './styles'
 import { socialMedia as SOCIAL } from 'catalogs/social'
 import SocialMediaButton from 'components/common/SocialMediaButton'
+import CustomLink from 'components/common/CustomLink'
 
 const NavBar = () => {
 	return (
@@ -12,9 +13,9 @@ const NavBar = () => {
 			<IconsContainer>
 				{SOCIAL.filter((social) => social.active === !true).map(
 					({ name, href }) => (
-						<a href={href} target="_blank">
+						<CustomLink href={href}>
 							<SocialMediaButton type={name} />
-						</a>
+						</CustomLink>
 					)
 				)}
 			</IconsContainer>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { styled } from '@stitches/react'
 import { Project } from 'types/projectType'
@@ -10,7 +11,15 @@ const HomePage = ({
 	return (
 		<Container>
 			{projects.map((project) => (
-				<p>{project.name}</p>
+				<>
+					<Image
+						src={project.image.src}
+						alt={project.image.alt}
+						width={400}
+						height={300}
+					/>
+					<h3>{project.name}</h3>
+				</>
 			))}
 			<h2>NavBar</h2>
 			<h2>Header</h2>
