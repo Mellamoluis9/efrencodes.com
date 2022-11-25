@@ -1,6 +1,12 @@
+export enum SocialTypeEnum {
+	TWITTER = 'twitter',
+	LINKEDIN = 'linkedin',
+	GITHUB = 'github'
+}
+
 export type Social = {
 	active: boolean
-	name: string
+	name: SocialTypeEnum
 	href: string
 	content: string
 }

@@ -8,7 +8,7 @@ export const NavBar = styled('nav', {
 	justifyContent: 'space-between'
 })
 
-export const Icons = styled('div', {
+export const IconsContainer = styled('div', {
 	width: '64px',
 	display: 'flex',
 	justifyContent: 'space-between'
