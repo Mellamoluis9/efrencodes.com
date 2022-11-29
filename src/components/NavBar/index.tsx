@@ -1,5 +1,9 @@
-import Link from 'next/link'
-import { NavBar as Container, IconsContainer } from './styles'
+import {
+	NavBar as Container,
+	IconsContainer,
+	ListContainer,
+	MenuContainer
+} from './styles'
 import { socialMedia as SOCIAL } from 'catalogs/social'
 import SocialMediaButton from 'components/common/SocialMediaButton'
 import CustomLink from 'components/common/CustomLink'
@@ -7,18 +11,27 @@ import CustomLink from 'components/common/CustomLink'
 const NavBar = () => {
 	return (
 		<Container>
-			<Link href="/">
+			<CustomLink href="/" isInternalLink>
 				<h1>Efren Martinez</h1>
-			</Link>
-			<IconsContainer>
-				{SOCIAL.filter((social) => social.active === !true).map(
-					({ name, href }) => (
-						<CustomLink href={href}>
-							<SocialMediaButton type={name} />
+			</CustomLink>
+			<MenuContainer>
+				<ListContainer>
+					<li>
+						<CustomLink href="/" isInternalLink>
+							Artículos
 						</CustomLink>
-					)
-				)}
-			</IconsContainer>
+					</li>
+				</ListContainer>
+				<IconsContainer>
+					{SOCIAL.filter((social) => social.active === !true).map(
+						({ name, href }) => (
+							<CustomLink href={href}>
+								<SocialMediaButton type={name} />
+							</CustomLink>
+						)
+					)}
+				</IconsContainer>
+			</MenuContainer>
 		</Container>
 	)
 }

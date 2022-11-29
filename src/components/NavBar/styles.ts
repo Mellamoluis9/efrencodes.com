@@ -13,3 +13,15 @@ export const IconsContainer = styled('div', {
 	display: 'flex',
 	justifyContent: 'space-between'
 })
+
+export const ListContainer = styled('ul', {
+	listStyleType: 'none',
+	margin: 0,
+	padding: 0
+})
+
+export const MenuContainer = styled('div', {
+	display: 'flex',
+	flexDirection: 'row',
+	alignItems: 'center'
+})
