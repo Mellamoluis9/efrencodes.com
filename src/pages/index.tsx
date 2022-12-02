@@ -34,7 +34,8 @@ const HomePage = ({
 export const getStaticProps: GetStaticProps<{
 	projects: Project[]
 }> = async () => {
-	const res = await fetch('http://localhost:3000/api/projects')
+	const URL = `${process.env.API_URL}api/projects`
+	const res = await fetch(URL)
 	const projects: Project[] = await res.json()
 
 	return {
