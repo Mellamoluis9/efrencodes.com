@@ -1,0 +1,13 @@
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.efrencodes.com/
+
+# Sitemaps
+Sitemap: https://www.efrencodes.com/sitemap.xml
