@@ -1,5 +1,6 @@
 import { FC } from 'react'
-import Link from 'next/link'
+import NextLink from 'next/link'
+import { Link } from '@chakra-ui/react'
 import { Props } from './types'
 
 const CustomLink: FC<Props> = ({
@@ -9,15 +10,15 @@ const CustomLink: FC<Props> = ({
 }) => {
 	if (isInternalLink) {
 		return (
-			<Link href={href} passHref legacyBehavior>
+			<Link as={NextLink} href={href} passHref legacyBehavior>
 				<a>{children}</a>
 			</Link>
 		)
 	}
 	return (
-		<a href={href} target="_blank" rel="noopener noreferrer">
+		<Link href={href} isExternal rel="noopener noreferrer">
 			{children}
-		</a>
+		</Link>
 	)
 }
 

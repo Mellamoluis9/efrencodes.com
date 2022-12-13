@@ -3,4 +3,5 @@ export type Props = {
 	alt: string
 	href: string
 	name: string
+	tecnologies: string[]
 }

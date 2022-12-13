@@ -8,7 +8,7 @@ export const project: Project[] = [
 			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-occ-mundial.webp',
 			alt: 'Project - OCC Mundial'
 		},
-		tecnologies: ['• React', '• Nextjs', '• Grapqhl']
+		tecnologies: ['React', 'Nextjs', 'Grapqhl', 'API Rest']
 	},
 	{
 		name: 'Suzuki México Autos',
@@ -17,14 +17,7 @@ export const project: Project[] = [
 			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-suzuki-mexico.webp',
 			alt: 'Project - Suzuki México Autos'
 		},
-		tecnologies: [
-			'• VueJS',
-			'• Quasar Framework',
-			'• HTML/SASS',
-			'• JavaScript',
-			'• Google Maps',
-			'• API Rest'
-		]
+		tecnologies: ['VueJS', 'Quasar Framework', 'Google Maps', 'API Rest']
 	},
 	{
 		name: 'Bticino México',
@@ -33,14 +26,7 @@ export const project: Project[] = [
 			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-bticino-mexico.webp',
 			alt: 'Project - Store Bticino México'
 		},
-		tecnologies: [
-			'• Vuejs',
-			'• Quasar Framework',
-			'• HTML/SASS',
-			'• API Rest',
-			'• JavaScript',
-			'• Open Pay'
-		]
+		tecnologies: ['Vuejs', 'Quasar Framework', 'API Rest', 'Open Pay']
 	},
 	{
 		name: 'Search Pokemon',
@@ -49,12 +35,6 @@ export const project: Project[] = [
 			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1668485401/www.efrencodes.com/project.ts/app-pokemon.webp',
 			alt: 'Project - Pokemon Search'
 		},
-		tecnologies: [
-			'• JavaScript',
-			'• React',
-			'• React',
-			'• NES.css',
-			'• API Pokemon'
-		]
+		tecnologies: ['JavaScript', 'React', 'NES.css', 'API Pokemon']
 	}
 ]
