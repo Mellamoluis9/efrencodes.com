@@ -1,7 +1,5 @@
-import { Footer as Container } from './styles'
-
 const Footer = () => {
-	return <Container>2023 efrencodes</Container>
+	return <footer>2023 efrencodes</footer>
 }
 
 export default Footer

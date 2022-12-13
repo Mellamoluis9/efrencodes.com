@@ -1,5 +1,4 @@
 import { FC, Fragment } from 'react'
-import { getCssText } from '@stitches'
 import { Props } from './types'
 
 const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
@@ -67,10 +66,6 @@ const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
 			<meta
 				name="ahrefs-site-verification"
 				content="9ad8ba080db7b2dfb9e2af32909749dbec24348bbee6f5aefc5de4e9d28c6b87"
-			/>
-			<style
-				id="stitches"
-				dangerouslySetInnerHTML={{ __html: getCssText() }}
 			/>
 		</Fragment>
 	)

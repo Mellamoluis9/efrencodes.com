@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import Link from 'next/link'
-import { LinkNormal, LinkCustom } from './styles'
 import { Props } from './types'
 
 const CustomLink: FC<Props> = ({
@@ -11,14 +10,14 @@ const CustomLink: FC<Props> = ({
 	if (isInternalLink) {
 		return (
 			<Link href={href} passHref legacyBehavior>
-				<LinkCustom>{children}</LinkCustom>
+				<a>{children}</a>
 			</Link>
 		)
 	}
 	return (
-		<LinkNormal href={href} target="_blank" rel="noopener noreferrer">
+		<a href={href} target="_blank" rel="noopener noreferrer">
 			{children}
-		</LinkNormal>
+		</a>
 	)
 }
 

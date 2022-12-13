@@ -1,21 +1,13 @@
 import type { AppProps } from 'next/app'
 import Layout from 'components/Layout'
-import { globalCss } from '@stitches/react'
-
-const globalStyles = globalCss({
-	'*': { margin: 0, padding: 0, boxSizing: 'border-box' },
-	'html, body': {
-		fontFamily: '$sans',
-		fontWeight: '$light',
-		backgroundColor: '$secundary'
-	}
-})
+import { ChakraProvider } from '@chakra-ui/react'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-	globalStyles()
 	return (
 		<Layout>
-			<Component {...pageProps} />
+			<ChakraProvider>
+				<Component {...pageProps} />
+			</ChakraProvider>
 		</Layout>
 	)
 }
