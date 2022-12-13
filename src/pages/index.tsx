@@ -1,9 +1,9 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { SimpleGrid } from '@chakra-ui/react'
-import { Project } from 'types/projectType'
+import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
-import WrapperRoughNotation from 'components/common/WrapperRoughNotation'
 import Section from 'components/common/Section'
+import Header from 'components/Header'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -13,11 +13,12 @@ const HomePage = ({
 	console.log(posts)
 	return (
 		<>
+			<Header />
 			<Section
 				heading="Proyectos Destacados"
 				subheading="Algunos proyectos que he participado/construido."
 			>
-				<SimpleGrid columns={2} spacingX={12} spacingY={12}>
+				<SimpleGrid pt="2em" columns={2} spacingX={12} spacingY={12}>
 					{projects.map((project) => (
 						<CardWithImage
 							href={project.url}
@@ -29,9 +30,6 @@ const HomePage = ({
 					))}
 				</SimpleGrid>
 			</Section>
-			<WrapperRoughNotation>
-				<h2>NavBar</h2>
-			</WrapperRoughNotation>
 		</>
 	)
 }

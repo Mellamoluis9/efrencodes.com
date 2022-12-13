@@ -1,14 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import {
 	Card,
 	Stack,
 	CardBody,
 	CardFooter,
 	Heading,
-	Badge
+	Badge,
+	Text,
+	Button
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
-import CustomLink from 'components/common/CustomLink'
 import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
@@ -21,19 +23,25 @@ const CardWithImage = ({ ...props }: Props) => {
 					width={400}
 					height={300}
 				/>
-				<Heading as="h3" size="md">
+				<Heading as="h3" size="md" lineHeight={2} textColor="gray.700">
 					{props.name}
 				</Heading>
 				<Stack direction="row" wrap="wrap">
 					{props?.tecnologies.map((item) => (
-						<Badge color="purple.700">{item}</Badge>
+						<Badge color="gray.700">{item}</Badge>
 					))}
 				</Stack>
 			</CardBody>
 			<CardFooter>
-				<CustomLink href={props.href}>
-					Visitar proyecto <ExternalLinkIcon />
-				</CustomLink>
+				<Button
+					as={Link}
+					href={props.href}
+					rightIcon={<ExternalLinkIcon />}
+					colorScheme="pink"
+					variant="link"
+				>
+					Visitar página
+				</Button>
 			</CardFooter>
 		</Card>
 	)

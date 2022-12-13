@@ -1,5 +1,5 @@
 const metaTagsDefault = {
-	title: 'Efrén Martínez 👨🏼‍💻 | Desarrollador Frontend - Vue - React - JavaScript',
+	title: 'Efrén Martínez ✦ Desarrollador Frontend - Vue - React',
 	description:
 		'Desarrollador Frontend especializado en JavaScript. Enfocado en desarrollo web trabajando con tecnologías como Vue y React con TypeScript.',
 	image: 'https://res.cloudinary.com/efrencodes/image/upload/v1658255476/efrencodes.ts/efren-martinez.webp',

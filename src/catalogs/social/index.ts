@@ -1,22 +1,22 @@
-import { Social, SocialTypeEnum } from 'types/socialType'
+import { Social, SocialTypeEnum } from 'catalogs/social/socialType'
 
 export const socialMedia: Social[] = [
 	{
 		active: false,
 		name: SocialTypeEnum.GITHUB,
 		href: 'https://github.com/efrencodes',
-		content: 'Sígueme en github'
+		content: 'Ve mis proyectos'
 	},
 	{
 		active: false,
 		name: SocialTypeEnum.LINKEDIN,
 		href: 'https://www.linkedin.com/in/efrencodes/',
-		content: 'Ponte en contacto'
+		content: 'Conecta conmigo'
 	},
 	{
 		active: true,
 		name: SocialTypeEnum.TWITTER,
 		href: 'https://twitter.com/efrencodes',
-		content: 'Escríbeme en'
+		content: 'Preguntame o escríbeme @'
 	}
 ]

@@ -1,6 +1,6 @@
 import NextDocument, { Html, Main, NextScript } from 'next/document'
 import { Head } from 'next/document'
-import HeadSeo from 'components/HeadSeo'
+import DefaultHead from 'components/DefaultHead'
 import { metaTags, structuredData } from 'catalogs/metatags'
 
 export default class Document extends NextDocument {
@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
 		return (
 			<Html lang="es">
 				<Head>
-					<HeadSeo
+					<DefaultHead
 						metaTags={metaTags}
 						structuredData={structuredData}
 					/>

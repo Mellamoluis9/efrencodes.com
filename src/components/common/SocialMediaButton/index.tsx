@@ -4,7 +4,7 @@ import {
 	GitHubLogoIcon,
 	TwitterLogoIcon
 } from '@radix-ui/react-icons'
-import { SocialTypeEnum } from 'types/socialType'
+import { SocialTypeEnum } from 'catalogs/social/socialType'
 import { Props } from './types'
 
 const SocialMediaButton: FC<Props> = ({ type }) => {

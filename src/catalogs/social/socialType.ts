@@ -1,6 +1,6 @@
 export enum SocialTypeEnum {
 	TWITTER = 'twitter',
-	LINKEDIN = 'linkedin',
+	LINKEDIN = 'linkedIn',
 	GITHUB = 'github'
 }
 

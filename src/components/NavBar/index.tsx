@@ -5,28 +5,26 @@ import CustomLink from 'components/common/CustomLink'
 
 const NavBar = () => {
 	return (
-		<nav>
-			<Flex alignItems="center">
+		<Flex alignItems="center" as="nav" pb={12} height="100px">
+			<CustomLink href="/" isInternalLink>
+				<h1>Efren Martinez</h1>
+			</CustomLink>
+			<Spacer />
+			<Flex>
 				<CustomLink href="/" isInternalLink>
-					<h1>Efren Martinez</h1>
+					<Text fontSize="md">Artículos</Text>
 				</CustomLink>
-				<Spacer />
-				<Flex>
-					<CustomLink href="/" isInternalLink>
-						<Text fontSize="md">Artículos</Text>
-					</CustomLink>
-					<Flex gap="16px" pl="12px" pr="12px">
-						{SOCIAL.filter((social) => social.active === !true).map(
-							({ name, href }) => (
-								<CustomLink href={href}>
-									<SocialMediaButton type={name} />
-								</CustomLink>
-							)
-						)}
-					</Flex>
+				<Flex gap="12px" pl="12px" pr="12px">
+					{SOCIAL.filter((social) => social.active === !true).map(
+						({ name, href }) => (
+							<CustomLink href={href}>
+								<SocialMediaButton type={name} />
+							</CustomLink>
+						)
+					)}
 				</Flex>
 			</Flex>
-		</nav>
+		</Flex>
 	)
 }
 
