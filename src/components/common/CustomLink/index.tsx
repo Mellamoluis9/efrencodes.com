@@ -6,7 +6,8 @@ import { Props } from './types'
 const CustomLink: FC<Props> = ({
 	href = '#',
 	children,
-	isInternalLink = false
+	isInternalLink = false,
+	isExternal = false
 }) => {
 	if (isInternalLink) {
 		return (
