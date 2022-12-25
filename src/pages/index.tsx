@@ -4,13 +4,13 @@ import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
 import Section from 'components/common/Section'
 import Header from 'components/Header'
+import ListArticule from 'components/ListArticule'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
 	projects,
 	posts
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-	console.log(posts)
 	return (
 		<>
 			<Header />
@@ -25,14 +25,12 @@ const HomePage = ({
 					spacingX={6}
 					spacingY={12}
 				>
-					{projects.map((project) => (
-						<CardWithImage
-							key={project.name}
-							href={project.url}
-							src={project.image.src}
-							alt={project.image.alt}
-							name={project.name}
-							tecnologies={project.tecnologies}
+					{posts.map((element) => (
+						<ListArticule
+							key={element?.data?.name}
+							title={element?.data?.title}
+							description={element?.data?.description}
+							slug={element?.data?.slug}
 						/>
 					))}
 				</SimpleGrid>
