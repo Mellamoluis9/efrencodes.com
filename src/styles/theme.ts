@@ -3,14 +3,15 @@ import { extendTheme } from '@chakra-ui/react'
 const theme = extendTheme({
 	styles: {
 		global: {
-			body: {
-				bg: '#fff'
+			'html, body': {
+				bg: '#f4f4f5',
+				color: '#15141a'
 			}
 		}
 	},
 	fonts: {
-		heading: `'Inter', sans-serif`,
-		body: `'Inter', sans-serif`
+		heading: `'Montserrat', Helvetica, Arial, sans-serif`,
+		body: `'Montserrat', Helvetica, Arial, sans-serif`
 	}
 })
 
