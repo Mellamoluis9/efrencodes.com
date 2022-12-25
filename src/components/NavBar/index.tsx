@@ -7,14 +7,17 @@ const NavBar = () => {
 	return (
 		<Flex alignItems="center" as="nav" pb={12} height="100px">
 			<CustomLink href="/" isInternalLink>
-				<h1>Efren Martinez</h1>
+				<h1>@efren</h1>
 			</CustomLink>
 			<Spacer />
-			<Flex>
+			<Flex gap="12px">
+				<CustomLink href="/sobre-mi" isInternalLink>
+					<Text fontSize="md">Sobre mí</Text>
+				</CustomLink>
 				<CustomLink href="/" isInternalLink>
 					<Text fontSize="md">Artículos</Text>
 				</CustomLink>
-				<Flex gap="12px" pl="12px" pr="12px">
+				<Flex gap="12px" pr="12px">
 					{SOCIAL.filter((social) => social.active === !true).map(
 						({ name, href }) => (
 							<CustomLink href={href}>

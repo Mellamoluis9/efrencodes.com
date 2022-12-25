@@ -7,20 +7,17 @@ const Footer = () => {
 		<Flex as="footer" gap={12} my={6}>
 			<Box as="div">
 				<CustomLink href="/" isInternalLink>
-					<Text
-						textTransform="capitalize"
-						lineHeight={2.8}
-						color="gray.800"
-					>
+					<Text lineHeight={2.8} color="gray.800">
 						Inicio
 					</Text>
 				</CustomLink>
+				<CustomLink href="/sobre-mi" isInternalLink>
+					<Text lineHeight={2.8} color="gray.800">
+						Sobre mí
+					</Text>
+				</CustomLink>
 				<CustomLink href="/" isInternalLink>
-					<Text
-						textTransform="capitalize"
-						lineHeight={2.8}
-						color="gray.800"
-					>
+					<Text lineHeight={2.8} color="gray.800">
 						Artículos
 					</Text>
 				</CustomLink>
@@ -30,11 +27,7 @@ const Footer = () => {
 					(social) => Boolean(social.active) === !true
 				).map(({ name, href, content }) => (
 					<CustomLink href={href}>
-						<Text
-							textTransform="capitalize"
-							lineHeight={2.8}
-							color="gray.800"
-						>
+						<Text lineHeight={2.8} color="gray.800">
 							{content}
 						</Text>
 					</CustomLink>
