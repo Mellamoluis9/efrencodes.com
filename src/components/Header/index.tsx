@@ -3,38 +3,24 @@ import { Box, Heading, Text, Highlight, Flex, Image } from '@chakra-ui/react'
 const Header = () => {
 	return (
 		<Flex as="header" gap={12}>
-			<Box maxW="3xl">
+			<Box>
 				<Image
 					src="https://res.cloudinary.com/efrencodes/image/upload/v1654747312/efrencodes.ts/perfil.webp"
 					alt="Photo perfil - efren martinez"
-					borderRadius={4}
 				/>
 			</Box>
 			<Box>
 				<Heading
 					as="h1"
-					fontSize="2xl"
-					lineHeight={2}
 					bgGradient="linear(to-l, #7928CA, #FF0080)"
 					bgClip="text"
 				>
 					Efren Martinez
 				</Heading>
-				<Heading
-					as="h2"
-					textTransform="uppercase"
-					textColor="GrayText"
-					fontSize="xl"
-					lineHeight={1.9}
-				>
+				<Heading as="h2" textTransform="uppercase">
 					Desarrollador Frontend
 				</Heading>
-				<Text
-					as="p"
-					fontSize="md"
-					lineHeight={1.9}
-					textColor="GrayText"
-				>
+				<Text as="p">
 					Desarrollador Frontend especializado en{' '}
 					<Highlight
 						query="JavaScript"
@@ -72,8 +58,7 @@ const Header = () => {
 					>
 						React.js
 					</Highlight>{' '}
-					con TypeScript. Con experiencia en desarrollo e
-					implementación de productos digitales.
+					con TypeScript.
 				</Text>
 			</Box>
 		</Flex>

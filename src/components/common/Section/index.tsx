@@ -5,12 +5,8 @@ import { Props } from './types'
 const Section: FC<Props> = ({ heading, subheading, children }) => {
 	return (
 		<Box as="section" py="3em">
-			<Heading as="h2" size="lg" lineHeight={2}>
-				{heading}
-			</Heading>
-			<Text as="p" fontSize="md" lineHeight={1.5} textColor="GrayText">
-				{subheading}
-			</Text>
+			<Heading as="h2">{heading}</Heading>
+			<Text as="p">{subheading}</Text>
 			{children}
 		</Box>
 	)

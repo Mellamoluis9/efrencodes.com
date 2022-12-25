@@ -18,9 +18,39 @@ const HomePage = ({
 				heading="Proyectos Destacados"
 				subheading="Algunos proyectos que he participado/construido."
 			>
-				<SimpleGrid pt="2em" columns={2} spacingX={12} spacingY={12}>
+				<SimpleGrid
+					pt="2em"
+					width="100%"
+					columns={{ base: 1, md: 2 }}
+					spacingX={6}
+					spacingY={12}
+				>
 					{projects.map((project) => (
 						<CardWithImage
+							key={project.name}
+							href={project.url}
+							src={project.image.src}
+							alt={project.image.alt}
+							name={project.name}
+							tecnologies={project.tecnologies}
+						/>
+					))}
+				</SimpleGrid>
+			</Section>
+			<Section
+				heading="Proyectos Destacados"
+				subheading="Algunos proyectos que he participado/construido."
+			>
+				<SimpleGrid
+					pt="2em"
+					width="100%"
+					columns={{ base: 1, md: 2 }}
+					spacingX={6}
+					spacingY={12}
+				>
+					{projects.map((project) => (
+						<CardWithImage
+							key={project.name}
 							href={project.url}
 							src={project.image.src}
 							alt={project.image.alt}
