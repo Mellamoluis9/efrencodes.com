@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import {
 	Card,
@@ -7,7 +6,7 @@ import {
 	CardFooter,
 	Heading,
 	Badge,
-	Text,
+	Image,
 	Button
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@radix-ui/react-icons'
@@ -15,24 +14,34 @@ import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
 	return (
-		<Card maxW="sm" size="sm">
+		<Card width="100%" variant="unstyled" transition="all 250ms">
 			<CardBody>
 				<Image
+					objectFit="cover"
+					borderRadius="md"
+					shadow="xl"
+					width="100%"
+					height="300px"
 					src={props.src}
 					alt={props.alt}
-					width={400}
-					height={300}
 				/>
-				<Heading as="h3" size="md" lineHeight={2} textColor="gray.700">
+				<Heading as="h2" mt="5">
 					{props.name}
 				</Heading>
-				<Stack direction="row" wrap="wrap">
-					{props?.tecnologies.map((item) => (
-						<Badge color="gray.700">{item}</Badge>
+				<Stack direction="row" wrap="wrap" mt="3">
+					{props?.tecnologies.map(({ name, color }) => (
+						<Badge
+							ml="1"
+							fontSize="0.9em"
+							colorScheme={color}
+							textTransform="capitalize"
+						>
+							{name}
+						</Badge>
 					))}
 				</Stack>
 			</CardBody>
-			<CardFooter>
+			<CardFooter mt="3">
 				<Button
 					as={Link}
 					href={props.href}

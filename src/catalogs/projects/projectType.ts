@@ -1,12 +1,22 @@
-type Image = {
+interface Image {
 	src: string
 	alt: string
 }
 
-export type Project = {
+export interface tecnologiesProps {
+	name: string
+	color: string
+}
+
+export interface Project {
 	name: string
 	url: string
 	description?: string
 	image: Image
-	tecnologies: string[]
+	tecnologies?: [
+		tecnologiesProps,
+		tecnologiesProps,
+		tecnologiesProps,
+		tecnologiesProps
+	]
 }
