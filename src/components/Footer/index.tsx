@@ -20,7 +20,7 @@ const Footer = () => {
 				{SOCIAL.filter(
 					(social) => Boolean(social.active) === !true
 				).map(({ name, href, content }) => (
-					<CustomLink href={href}>
+					<CustomLink href={href} key={name}>
 						<Text>{content}</Text>
 					</CustomLink>
 				))}

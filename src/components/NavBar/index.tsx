@@ -20,7 +20,7 @@ const NavBar = () => {
 				<Flex gap="12px" pr="12px">
 					{SOCIAL.filter((social) => social.active === !true).map(
 						({ name, href }) => (
-							<CustomLink href={href}>
+							<CustomLink href={href} key={name}>
 								<SocialMediaButton type={name} />
 							</CustomLink>
 						)
