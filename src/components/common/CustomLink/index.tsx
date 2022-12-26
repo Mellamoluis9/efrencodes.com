@@ -17,7 +17,7 @@ const CustomLink: FC<Props> = ({
 		)
 	}
 	return (
-		<Link href={href} isExternal rel="noopener noreferrer">
+		<Link href={href} isExternal={isExternal} rel="noopener noreferrer">
 			{children}
 		</Link>
 	)

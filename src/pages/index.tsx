@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { SimpleGrid } from '@chakra-ui/react'
+import { SimpleGrid, List } from '@chakra-ui/react'
 import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
 import Section from 'components/common/Section'
@@ -15,8 +15,8 @@ const HomePage = ({
 		<>
 			<Header />
 			<Section
-				heading="Proyectos Destacados"
-				subheading="Algunos proyectos que he participado/construido."
+				heading="Mis artículos"
+				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
 			>
 				<SimpleGrid
 					pt="2em"
@@ -31,6 +31,7 @@ const HomePage = ({
 							title={element?.data?.title}
 							description={element?.data?.description}
 							slug={element?.data?.slug}
+							date={element?.data?.date}
 						/>
 					))}
 				</SimpleGrid>

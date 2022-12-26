@@ -25,7 +25,7 @@ const CardWithImage = ({ ...props }: Props) => {
 					src={props.src}
 					alt={props.alt}
 				/>
-				<Heading as="h2" mt="5">
+				<Heading as="h3" mt="5">
 					{props.name}
 				</Heading>
 				<Stack direction="row" wrap="wrap" mt="3">

@@ -14,12 +14,12 @@ const theme = extendTheme({
 				letterSpacing: '-0.03em'
 			},
 			h2: {
-				fontSize: '.8rem',
+				fontSize: '1.8rem',
 				lineHeight: '1.2',
 				letterSpacing: '-0.03em'
 			},
 			h3: {
-				fontSize: '1rem',
+				fontSize: '0.8rem',
 				lineHeight: '1.2',
 				letterSpacing: '-0.02em'
 			},
