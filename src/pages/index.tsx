@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { SimpleGrid, List } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
 import Section from 'components/common/Section'
