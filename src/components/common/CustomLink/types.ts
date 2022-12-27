@@ -5,4 +5,5 @@ export type Props = {
 	children: React.ReactNode
 	isInternalLink?: boolean
 	isExternal?: boolean
+	color?: string
 }

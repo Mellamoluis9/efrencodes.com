@@ -4,16 +4,13 @@ import CustomLink from 'components/common/CustomLink'
 
 const Footer = () => {
 	return (
-		<Flex as="footer" gap={12} my={6}>
+		<Flex as="footer" gap="36px" my={6}>
 			<Box as="div">
 				<CustomLink href="/" isInternalLink>
 					<Text>Inicio</Text>
 				</CustomLink>
 				<CustomLink href="/sobre-mi" isInternalLink>
 					<Text>Sobre mí</Text>
-				</CustomLink>
-				<CustomLink href="/" isInternalLink>
-					<Text>Artículos</Text>
 				</CustomLink>
 			</Box>
 			<Box as="div">
@@ -24,9 +21,6 @@ const Footer = () => {
 						<Text>{content}</Text>
 					</CustomLink>
 				))}
-			</Box>
-			<Box as="div">
-				<Text>2023 efrencodes</Text>
 			</Box>
 		</Flex>
 	)

@@ -5,7 +5,13 @@ import { Props } from './types'
 const ListArticule = ({ ...props }: Props) => {
 	const href = `/articulos/${props.slug}`
 	return (
-		<Card variant="unstyled" padding={8} shadow="lg" bg="gray.100">
+		<Card
+			variant="unstyled"
+			padding={8}
+			shadow="lg"
+			border="1px solid #e5e7eb"
+			_hover={{ bg: 'gray.100' }}
+		>
 			<CustomLink href={href}>
 				<Text>{props.title}</Text>
 			</CustomLink>

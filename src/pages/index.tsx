@@ -1,5 +1,12 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { SimpleGrid } from '@chakra-ui/react'
+import {
+	Box,
+	Heading,
+	Text,
+	Highlight,
+	SimpleGrid,
+	Image
+} from '@chakra-ui/react'
 import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
 import Section from 'components/common/Section'
@@ -13,7 +20,67 @@ const HomePage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<>
-			<Header />
+			<Header>
+				<Image
+					objectFit="cover"
+					borderRadius="md"
+					shadow="lg"
+					width={{ base: '100px', md: '180px' }}
+					height={{ base: '100px', md: '180px' }}
+					src="https://res.cloudinary.com/efrencodes/image/upload/v1654747312/efrencodes.ts/perfil.webp"
+					alt="Efren Martinez"
+				/>
+				<Box>
+					<Heading
+						as="h1"
+						bgGradient="linear(to-l, #7928CA, #FF0080)"
+						bgClip="text"
+					>
+						Efren Martinez
+					</Heading>
+					<Heading as="h2">Desarrollador Frontend</Heading>
+					<Text as="p">
+						Desarrollador Frontend especializado en{' '}
+						<Highlight
+							query="JavaScript"
+							styles={{
+								px: '2',
+								py: '1',
+								rounded: 'full',
+								bg: 'yellow.100'
+							}}
+						>
+							JavaScript
+						</Highlight>
+						. Enfocado en el desarrollo web trabajando
+						principalmente con tecnologías como{' '}
+						<Highlight
+							query="Vue.js"
+							styles={{
+								px: '2',
+								py: '1',
+								rounded: 'full',
+								bg: 'green.100'
+							}}
+						>
+							Vue.js
+						</Highlight>{' '}
+						y{' '}
+						<Highlight
+							query="React.js"
+							styles={{
+								px: '2',
+								py: '1',
+								rounded: 'full',
+								bg: 'blue.100'
+							}}
+						>
+							React.js
+						</Highlight>{' '}
+						con TypeScript.
+					</Text>
+				</Box>
+			</Header>
 			<Section
 				heading="Mis artículos"
 				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
@@ -46,6 +113,7 @@ const HomePage = ({
 					columns={{ base: 1, md: 2 }}
 					spacingX={6}
 					spacingY={12}
+					mb="100px"
 				>
 					{projects.map((project) => (
 						<CardWithImage

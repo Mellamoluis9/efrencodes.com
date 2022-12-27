@@ -7,7 +7,8 @@ const CustomLink: FC<Props> = ({
 	href = '#',
 	children,
 	isInternalLink = false,
-	isExternal = false
+	isExternal = false,
+	color = ''
 }) => {
 	if (isInternalLink) {
 		return (
@@ -17,7 +18,12 @@ const CustomLink: FC<Props> = ({
 		)
 	}
 	return (
-		<Link href={href} isExternal={isExternal} rel="noopener noreferrer">
+		<Link
+			href={href}
+			isExternal={isExternal}
+			rel="noopener noreferrer"
+			color={color}
+		>
 			{children}
 		</Link>
 	)

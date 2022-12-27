@@ -1,7 +1,7 @@
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeHighlight from 'rehype-highlight'
-import { Image, Box } from '@chakra-ui/react'
+import { Image, Box, Heading, Flex } from '@chakra-ui/react'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 
@@ -9,16 +9,33 @@ export default function Articles({ data, content }) {
 	return (
 		<>
 			<main>
-				<Image
-					objectFit="cover"
-					borderRadius="md"
-					shadow="xl"
-					width="100%"
-					height="300px"
-					src={data.image}
-					alt={data.title}
-					mb="100px"
-				/>
+				<Flex
+					gap="18px"
+					mb="50px"
+					mt="80px"
+					flexDirection={{ base: 'column', md: 'row' }}
+				>
+					<Image
+						objectFit="cover"
+						borderRadius="md"
+						shadow="xl"
+						width="100px"
+						height="100px"
+						src={data.cover}
+						alt={data.title}
+					/>
+					<Heading
+						as="h1"
+						bgGradient={[
+							'linear(to-tr, teal.300, yellow.400)',
+							'linear(to-t, blue.200, teal.500)',
+							'linear(to-b, orange.100, purple.300)'
+						]}
+						bgClip="text"
+					>
+						{data.title}
+					</Heading>
+				</Flex>
 				<Box mb="200px">
 					<MDXRemote {...content} />
 				</Box>
