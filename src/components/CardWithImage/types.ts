@@ -11,4 +11,5 @@ export interface Props {
 		tecnologiesProps,
 		tecnologiesProps
 	]
+	backgroundImage: string
 }

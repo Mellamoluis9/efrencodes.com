@@ -111,8 +111,8 @@ const HomePage = ({
 					pt="2em"
 					width="100%"
 					columns={{ base: 1, md: 2 }}
-					spacingX={6}
-					spacingY={12}
+					spacingX="60px"
+					spacingY="60px"
 					mb="100px"
 				>
 					{projects.map((project) => (
@@ -123,6 +123,7 @@ const HomePage = ({
 							alt={project.image.alt}
 							name={project.name}
 							tecnologies={project.tecnologies}
+							backgroundImage={project.backgroundImage}
 						/>
 					))}
 				</SimpleGrid>

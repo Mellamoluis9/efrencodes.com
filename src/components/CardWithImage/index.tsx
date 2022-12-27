@@ -14,12 +14,18 @@ import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
 	return (
-		<Card width="100%" variant="unstyled" transition="all 250ms">
+		<Card
+			shadow="lg"
+			width="100%"
+			variant="unstyled"
+			transition="all 250ms"
+			padding={8}
+			backgroundImage={props.backgroundImage}
+		>
 			<CardBody>
 				<Image
 					objectFit="cover"
 					borderRadius="md"
-					shadow="xl"
 					width="100%"
 					height="300px"
 					src={props.src}

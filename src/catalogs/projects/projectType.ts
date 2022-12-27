@@ -19,4 +19,5 @@ export interface Project {
 		tecnologiesProps,
 		tecnologiesProps
 	]
+	backgroundImage: string
 }

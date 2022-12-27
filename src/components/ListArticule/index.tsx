@@ -8,9 +8,11 @@ const ListArticule = ({ ...props }: Props) => {
 		<Card
 			variant="unstyled"
 			padding={8}
-			shadow="lg"
 			border="1px solid #e5e7eb"
-			_hover={{ bg: 'gray.100' }}
+			backgroundImage="linear-gradient(to right bottom, rgba(255, 255, 255, 0.25), rgba(255, 241, 242, 0.5))"
+			_hover={{
+				shadow: 'sm'
+			}}
 		>
 			<CustomLink href={href}>
 				<Text>{props.title}</Text>
