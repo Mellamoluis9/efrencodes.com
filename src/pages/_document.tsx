@@ -25,6 +25,10 @@ export default class Document extends NextDocument {
 						href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
 						rel="stylesheet"
 					/>
+					<link
+						rel="stylesheet"
+						href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_dark.css"
+					/>
 				</Head>
 				<body>
 					<Main />

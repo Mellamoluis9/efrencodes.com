@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
+import rehypeHighlight from 'rehype-highlight'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 
@@ -37,7 +38,13 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
 	const post = await getPost(params.slug)
 	const mdxSource = await serialize(post.content, {
-		parseFrontmatter: true
+		parseFrontmatter: true,
+		scope: {},
+		mdxOptions: {
+			remarkPlugins: [],
+			rehypePlugins: [rehypeHighlight],
+			format: 'mdx'
+		}
 	})
 	return {
 		props: {
