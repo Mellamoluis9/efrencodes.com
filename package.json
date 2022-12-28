@@ -1,22 +1,23 @@
 {
-	"name": "new-portfolio-2023",
+	"name": "efrencodes.com",
 	"author": "efrencodes <efrencodes@gmail.com> (https://efrencodes.com)",
 	"version": "1.0.0",
-	"description": "A project web for tracking with nextjs.",
+	"description": "A portfolio built on Nextjs, TypeScript and Chakra UI. Hosted in ▲ Vercel.",
 	"main": "src/pages/index.tsx",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/efrencodes/new-portfolio-2023"
+		"url": "git+https://github.com/efrencodes/efrencodes.com"
 	},
 	"keywords": [
-		"next",
 		"nextjs",
-		"typescript"
+		"typescript",
+		"chakra-ui",
+		"mdx"
 	],
 	"bugs": {
-		"url": "https://github.com/efrencodes/new-portfolio-2023/issues"
+		"url": "https://github.com/efrencodes/efrencodes.com/issues"
 	},
-	"homepage": "https://github.com/efrencodes/new-portfolio-2023#readme",
+	"homepage": "https://github.com/efrencodes/efrencodes.com#readme",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

@@ -1,16 +1,17 @@
-## Efren Martinez // Frontend Developer
+## Efren Martinez - Frontend Developer
 
-A portfolio built on Nextjs, TypeScript and Stitches. Hosted in ▲ Vercel.
+A portfolio built on Nextjs, TypeScript and Chakra UI. Hosted in ▲ Vercel.
 
 [Live Demo](#)
 
 ### Crafted with:
 
--   ▲ [Next.js](https://nextjs.org/) for webapp
--   🖼 [Chakra UI](https://chakra-ui.com/) for UI components
+-   [Next.js](https://nextjs.org/)
+-   [Chakra UI](https://chakra-ui.com/) for styling
 -   [Typescript](https://www.typescriptlang.org/)
--   [Stitches](https://stitches.dev/)
--   [Deploy in Vercel](https://vercel.com/)
+-   [Vercel](https://vercel.com/) for hosting
+-   [Splitbee](https://app.splitbee.io/) for analytics
+-   [Cloudinary](https://cloudinary.com/) for hosting images
 
 ## Getting Started
 
