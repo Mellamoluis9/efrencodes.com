@@ -30,15 +30,20 @@ const CardWithImage = ({ ...props }: Props) => {
 					height="300px"
 					src={props.src}
 					alt={props.alt}
+					_hover={{
+						transform: 'scale(1.1)'
+					}}
 				/>
-				<Heading as="h3" mt="5">
+				<Heading as="h3" mt="15px" mb="24px">
 					{props.name}
 				</Heading>
-				<Stack direction="row" wrap="wrap" mt="3">
+				<Stack direction="row" wrap="wrap">
 					{props?.tecnologies.map(({ name, color }) => (
 						<Badge
 							ml="1"
-							fontSize="0.9em"
+							mr="1"
+							fontSize="14px"
+							fontWeight="500"
 							colorScheme={color}
 							textTransform="capitalize"
 						>
@@ -47,13 +52,15 @@ const CardWithImage = ({ ...props }: Props) => {
 					))}
 				</Stack>
 			</CardBody>
-			<CardFooter mt="3">
+			<CardFooter mt="24px">
 				<Button
 					as={Link}
 					href={props.href}
 					rightIcon={<ExternalLinkIcon />}
 					colorScheme="pink"
 					variant="link"
+					fontSize="14px"
+					fontWeight="500"
 				>
 					Visitar página
 				</Button>

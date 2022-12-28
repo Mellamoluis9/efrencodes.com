@@ -23,7 +23,7 @@ const HomePage = ({
 			<Header>
 				<Image
 					objectFit="cover"
-					borderRadius="md"
+					borderRadius="lg"
 					shadow="lg"
 					width={{ base: '100px', md: '180px' }}
 					height={{ base: '100px', md: '180px' }}
@@ -38,7 +38,9 @@ const HomePage = ({
 					>
 						Efren Martinez
 					</Heading>
-					<Heading as="h2">Desarrollador Frontend</Heading>
+					<Heading as="h2">
+						Desarrollador Frontend #Vuejs #Reactjs
+					</Heading>
 					<Text as="p">
 						Desarrollador Frontend especializado en{' '}
 						<Highlight

@@ -11,7 +11,7 @@ const ListArticule = ({ ...props }: Props) => {
 			border="1px solid #e5e7eb"
 			backgroundImage="linear-gradient(to right bottom, rgba(255, 255, 255, 0.25), rgba(255, 241, 242, 0.5))"
 			_hover={{
-				shadow: 'sm'
+				shadow: 'lg'
 			}}
 		>
 			<CustomLink href={href}>

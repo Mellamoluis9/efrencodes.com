@@ -9,25 +9,28 @@ const theme = extendTheme({
 				fontSize: '14px'
 			},
 			h1: {
+				letterSpacing: '-0.03em',
 				fontSize: '1.875rem',
 				lineHeight: '1.2',
-				letterSpacing: '-0.03em'
+				fontWeight: '500 !important'
 			},
 			h2: {
 				fontSize: '1.8rem',
 				lineHeight: '1.2',
-				letterSpacing: '-0.03em'
+				letterSpacing: '-0.03em',
+				fontWeight: '500 !important'
 			},
 			h3: {
-				fontSize: '0.8rem',
+				fontSize: '1.6rem !important',
 				lineHeight: '1.2',
-				letterSpacing: '-0.02em'
+				letterSpacing: '-0.02em',
+				fontWeight: '500 !important'
 			},
 			'p, ul, span': {
 				fontSize: '1.125rem',
 				lineHeight: '2',
 				letterSpacing: '-0.01em',
-				fontWeight: 'medium',
+				fontWeight: '400',
 				color: '#5b5b66'
 			}
 		}
