@@ -5,7 +5,7 @@ export const project: Project[] = [
 		name: 'OCC Mundial',
 		url: 'https://www.occ.com.mx/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672116525/www.efrencodes.com/project.ts/app-occ-mundial.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672193160/www.efrencodes.com/project.ts/app-occ-mundial.webp',
 			alt: 'Project - OCC Mundial'
 		},
 		tecnologies: [
@@ -21,7 +21,7 @@ export const project: Project[] = [
 		name: 'Suzuki México Autos',
 		url: 'https://www.suzuki.com.mx/autos',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672116530/www.efrencodes.com/project.ts/app-suzuki-mexico.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672193166/www.efrencodes.com/project.ts/app-suzuki-mexico.webp',
 			alt: 'Project - Suzuki México Autos'
 		},
 		tecnologies: [
@@ -37,7 +37,7 @@ export const project: Project[] = [
 		name: 'Bticino México',
 		url: 'https://store.bticino.com.mx/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672116522/www.efrencodes.com/project.ts/app-bticino-mexico.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672193156/www.efrencodes.com/project.ts/app-bticino-mexico.webp',
 			alt: 'Project - Store Bticino México'
 		},
 		tecnologies: [
@@ -53,7 +53,7 @@ export const project: Project[] = [
 		name: 'Search Pokemon',
 		url: 'https://prueba-occ-pokemon.vercel.app/',
 		image: {
-			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672116528/www.efrencodes.com/project.ts/app-pokemon.webp',
+			src: 'https://res.cloudinary.com/efrencodes/image/upload/v1672193163/www.efrencodes.com/project.ts/app-pokemon.webp',
 			alt: 'Project - Pokemon Search'
 		},
 		tecnologies: [
