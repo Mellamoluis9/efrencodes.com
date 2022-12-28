@@ -5,9 +5,10 @@ import {
 	List,
 	ListItem,
 	Highlight,
-	Link
+	Link,
+	SimpleGrid
 } from '@chakra-ui/react'
-import CustomLink from 'components/common/CustomLink'
+import Item from 'components/Item'
 import { socialMedia as SOCIAL } from 'catalogs/social'
 
 const AboutHome = () => {
@@ -25,7 +26,7 @@ const AboutHome = () => {
 						px: '2',
 						py: '1',
 						rounded: 'full',
-						bg: 'yellow.100'
+						bg: '#fef08a'
 					}}
 				>
 					JavaScript
@@ -38,7 +39,7 @@ const AboutHome = () => {
 						px: '2',
 						py: '1',
 						rounded: 'full',
-						bg: 'green.100'
+						bg: '#bbf7d0'
 					}}
 				>
 					Vue.js
@@ -50,7 +51,7 @@ const AboutHome = () => {
 						px: '2',
 						py: '1',
 						rounded: 'full',
-						bg: 'blue.100'
+						bg: '#bae6fd'
 					}}
 				>
 					React.js
@@ -61,7 +62,7 @@ const AboutHome = () => {
 			<Text as="p" mt="20px">
 				Actualmente, trabajo como desarrollador frontend en{' '}
 				<Link
-					color="pink.500"
+					color="#ec4899"
 					href="https://www.occ.com.mx/empleos/"
 					isExternal
 				>
@@ -74,7 +75,7 @@ const AboutHome = () => {
 			<Text as="p" mt="20px">
 				En mi tiempo libre disfruto mucho{' '}
 				<Link
-					color="blue.500"
+					color="#3b82f6"
 					href="https://letterboxd.com/efrencodes/"
 					isExternal
 				>
@@ -90,9 +91,12 @@ const AboutHome = () => {
 			</Text>
 			<List spacing={3} mt="20px">
 				<ListItem>
-					<Text as="b">2021 - Ahora</Text> Frontend Developer React{' '}
+					<Text as="b" fontWeight="500">
+						2021 - Ahora
+					</Text>{' '}
+					Frontend Developer React{' '}
 					<Link
-						color="red.500"
+						color="#ef4444"
 						href="https://www.occ.com.mx/empleos/"
 						isExternal
 					>
@@ -100,9 +104,12 @@ const AboutHome = () => {
 					</Link>{' '}
 				</ListItem>
 				<ListItem>
-					<Text as="b">2018 - 2021</Text> Frontend Developer Vue.js{' '}
+					<Text as="b" fontWeight="500">
+						2018 - 2021
+					</Text>{' '}
+					Frontend Developer Vue.js{' '}
 					<Link
-						color="green.500"
+						color="#84cc16"
 						href="https://www.occ.com.mx/empleos/"
 						isExternal
 					>
@@ -110,9 +117,12 @@ const AboutHome = () => {
 					</Link>
 				</ListItem>
 				<ListItem>
-					<Text as="b">2015 - 2018</Text> Web developer{' '}
+					<Text as="b" fontWeight="500">
+						2015 - 2018
+					</Text>{' '}
+					Web developer{' '}
 					<Link
-						color="purple.500"
+						color="#a855f7"
 						href="https://grupoeducare.com/web/"
 						isExternal
 					>
@@ -120,28 +130,34 @@ const AboutHome = () => {
 					</Link>
 				</ListItem>
 			</List>
-			<Heading as="h2" mt="20px">
+			<Heading as="h2" mt="50px" mb="15px">
 				Comunícate conmigo
 			</Heading>
-			<List spacing={3} mb="100px">
-				<Text as="p">
-					¿Quieres construir nuevos proyectos web o mejorar los
-					existentes?
-				</Text>
-				<Text as="p">
-					Te invito a enviarme un mensaje por alguna de mis redes
-					sociales.
-				</Text>
+			<Text as="p">
+				Si estás interesado en trabajar conmigo o tienes alguna pregunta
+				o sugerencia, no dudes en ponerte en contacto conmigo. También
+				puedes seguirme en mis redes sociales para ver mis últimos
+				proyectos y novedades.
+			</Text>
+			<SimpleGrid
+				pt="2em"
+				pb="100px"
+				width="100%"
+				columns={{ base: 1, md: 2 }}
+				spacingX={12}
+				spacingY={12}
+			>
 				{SOCIAL.filter(
 					(social) => Boolean(social.active) === !true
-				).map(({ name, href, content }) => (
-					<ListItem key={name}>
-						<CustomLink href={href} isExternal={true}>
-							<Text>{content}</Text>
-						</CustomLink>
-					</ListItem>
+				).map(({ name, href, content, cover }) => (
+					<Item
+						name={name}
+						content={content}
+						cover={cover}
+						href={href}
+					/>
 				))}
-			</List>
+			</SimpleGrid>
 		</Fragment>
 	)
 }

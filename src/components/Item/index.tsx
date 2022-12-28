@@ -11,21 +11,21 @@ import {
 import CustomLink from 'components/common/CustomLink'
 import { Props } from './types'
 
-const ContactItem: FC<Props> = ({ name, content, cover, href }) => {
+const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
 	return (
 		<Card variant="outline" shadow="none" _hover={{ bg: '#fff7ed' }}>
 			<CardBody>
 				<Flex gap="24px" alignItems="center">
 					<Image src={cover} alt={name} width="40px" height="40px" />
 					<Box>
-						<Heading
-							as="h3"
-							fontSize="18px !important"
-							textTransform="capitalize"
-						>
-							{name}
-						</Heading>
-						<CustomLink href={href} isExternal={true}>
+						<CustomLink href={href} isExternal={isExternal}>
+							<Heading
+								as="h3"
+								fontSize="18px !important"
+								textTransform="capitalize"
+							>
+								{name}
+							</Heading>
 							<Text>{content}</Text>
 						</CustomLink>
 					</Box>
@@ -35,4 +35,4 @@ const ContactItem: FC<Props> = ({ name, content, cover, href }) => {
 	)
 }
 
-export default ContactItem
+export default Item

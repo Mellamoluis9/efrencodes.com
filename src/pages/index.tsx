@@ -11,7 +11,7 @@ import { Project } from 'catalogs/projects/projectType'
 import CardWithImage from 'components/CardWithImage'
 import Section from 'components/common/Section'
 import Header from 'components/Header'
-import ListArticule from 'components/ListArticule'
+import Item from 'components/Item'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -49,7 +49,7 @@ const HomePage = ({
 								px: '2',
 								py: '1',
 								rounded: 'full',
-								bg: 'yellow.100'
+								bg: '#fef08a'
 							}}
 						>
 							JavaScript
@@ -62,7 +62,7 @@ const HomePage = ({
 								px: '2',
 								py: '1',
 								rounded: 'full',
-								bg: 'green.100'
+								bg: '#bbf7d0'
 							}}
 						>
 							Vue.js
@@ -74,7 +74,7 @@ const HomePage = ({
 								px: '2',
 								py: '1',
 								rounded: 'full',
-								bg: 'blue.100'
+								bg: '#bae6fd'
 							}}
 						>
 							React.js
@@ -87,20 +87,14 @@ const HomePage = ({
 				heading="Mis artículos"
 				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
 			>
-				<SimpleGrid
-					pt="2em"
-					width="100%"
-					columns={{ base: 1, md: 2 }}
-					spacingX={6}
-					spacingY={12}
-				>
+				<SimpleGrid pt="2em" width="100%" columns={{ base: 1, md: 1 }}>
 					{posts.map((element) => (
-						<ListArticule
-							key={element?.data?.name}
-							title={element?.data?.title}
-							description={element?.data?.description}
-							slug={element?.data?.slug}
-							date={element?.data?.date}
+						<Item
+							name={element?.data?.title}
+							content={element?.data?.description}
+							cover={element?.data?.cover}
+							href={`/articulos/${element?.data?.slug}`}
+							isExternal={false}
 						/>
 					))}
 				</SimpleGrid>

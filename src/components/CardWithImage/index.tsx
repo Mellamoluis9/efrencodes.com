@@ -9,7 +9,7 @@ import {
 	Image,
 	Button
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@radix-ui/react-icons'
+import { ArrowRightIcon } from '@radix-ui/react-icons'
 import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
@@ -56,7 +56,7 @@ const CardWithImage = ({ ...props }: Props) => {
 				<Button
 					as={Link}
 					href={props.href}
-					rightIcon={<ExternalLinkIcon />}
+					rightIcon={<ArrowRightIcon color="black" />}
 					colorScheme="pink"
 					variant="link"
 					fontSize="14px"
