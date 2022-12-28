@@ -12,6 +12,7 @@ export default class Document extends NextDocument {
 						metaTags={metaTags}
 						structuredData={structuredData}
 					/>
+					<script async src="https://cdn.splitbee.io/sb.js" />
 					<link
 						rel="preconnect"
 						href="https://fonts.googleapis.com"
