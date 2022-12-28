@@ -3,5 +3,5 @@ export interface Props {
 	content: string
 	cover: string
 	href: string
-	isExternal: boolean
+	isExternal?: boolean
 }

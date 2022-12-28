@@ -39,7 +39,7 @@ const HomePage = ({
 						Efren Martinez
 					</Heading>
 					<Heading as="h2">
-						Desarrollador Frontend #Vuejs #Reactjs
+						Desarrollador Frontend Vuejs Reactjs
 					</Heading>
 					<Text as="p">
 						Desarrollador Frontend especializado en{' '}

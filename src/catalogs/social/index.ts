@@ -16,6 +16,13 @@ export const socialMedia: Social[] = [
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196105/www.efrencodes.com/tecnologies/linkedin.svg'
 	},
 	{
+		active: false,
+		name: SocialTypeEnum.MAIL,
+		href: 'mailto:efrencodes@gmail.com',
+		content: 'Envíame un correoo',
+		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672199846/www.efrencodes.com/tecnologies/google-gmail.svg'
+	},
+	{
 		active: true,
 		name: SocialTypeEnum.TWITTER,
 		href: 'https://twitter.com/efrencodes',

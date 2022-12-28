@@ -9,5 +9,5 @@
 /* SITE */
 	Last update: 2022/09/05
 	Language: Spanish
-	Doctype: NextJS, TypeScript, Stitches
+	Doctype: NextJS, TypeScript, Chakra Ui
 	IDE: VSCode

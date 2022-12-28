@@ -1,7 +1,8 @@
 export enum SocialTypeEnum {
 	TWITTER = 'twitter',
 	LINKEDIN = 'linkedIn',
-	GITHUB = 'github'
+	GITHUB = 'github',
+	MAIL = 'correo electrónico'
 }
 
 export type Social = {

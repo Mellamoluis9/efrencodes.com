@@ -144,8 +144,8 @@ const AboutHome = () => {
 				pb="100px"
 				width="100%"
 				columns={{ base: 1, md: 2 }}
-				spacingX={12}
-				spacingY={12}
+				spacingX={6}
+				spacingY={6}
 			>
 				{SOCIAL.filter(
 					(social) => Boolean(social.active) === !true
