@@ -9,4 +9,5 @@ export type Social = {
 	name: SocialTypeEnum
 	href: string
 	content: string
+	cover: string
 }
