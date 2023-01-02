@@ -16,11 +16,12 @@ const NavBar = () => {
 				</CustomLink>
 				<Flex gap="12px" pr="12px">
 					{SOCIAL.filter((social) => social.active === !true).map(
-						({ name, href }) => (
+						({ name, href, ariaLabel }) => (
 							<CustomLink
 								href={href}
 								key={name}
 								isExternal={true}
+								ariaLabel={ariaLabel}
 							>
 								<SocialMediaButton type={name} />
 							</CustomLink>

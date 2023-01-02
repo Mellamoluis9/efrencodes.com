@@ -11,4 +11,6 @@ export type Social = {
 	href: string
 	content: string
 	cover: string
+	ariaLabel?: string
+	footer: boolean
 }

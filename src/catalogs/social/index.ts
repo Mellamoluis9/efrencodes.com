@@ -6,27 +6,35 @@ export const socialMedia: Social[] = [
 		name: SocialTypeEnum.GITHUB,
 		href: 'https://github.com/efrencodes',
 		content: 'Ve mis proyectos',
-		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196109/www.efrencodes.com/tecnologies/github.svg'
+		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196109/www.efrencodes.com/tecnologies/github.svg',
+		ariaLabel: 'Visita mi perfil en Github',
+		footer: true
 	},
 	{
 		active: false,
 		name: SocialTypeEnum.LINKEDIN,
 		href: 'https://www.linkedin.com/in/efrencodes/',
 		content: 'Conecta conmigo',
-		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196105/www.efrencodes.com/tecnologies/linkedin.svg'
+		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196105/www.efrencodes.com/tecnologies/linkedin.svg',
+		ariaLabel: 'Visita mi perfil en Linkedln',
+		footer: true
 	},
 	{
 		active: false,
 		name: SocialTypeEnum.MAIL,
 		href: 'mailto:efrencodes@gmail.com',
-		content: 'Envíame un correoo',
-		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672199846/www.efrencodes.com/tecnologies/google-gmail.svg'
+		content: 'Envíame un correo',
+		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672199846/www.efrencodes.com/tecnologies/google-gmail.svg',
+		ariaLabel: 'Enviame un correo a efrencodes@gmail.com',
+		footer: false
 	},
 	{
 		active: true,
 		name: SocialTypeEnum.TWITTER,
 		href: 'https://twitter.com/efrencodes',
 		content: 'Preguntame o escríbeme @',
-		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196178/www.efrencodes.com/tecnologies/twitter.svg'
+		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196178/www.efrencodes.com/tecnologies/twitter.svg',
+		ariaLabel: 'Visita mi perfil en Twitter',
+		footer: false
 	}
 ]

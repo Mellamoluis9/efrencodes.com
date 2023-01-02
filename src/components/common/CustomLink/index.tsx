@@ -8,7 +8,8 @@ const CustomLink: FC<Props> = ({
 	children,
 	isInternalLink = false,
 	isExternal = false,
-	color = ''
+	color = '',
+	ariaLabel = ''
 }) => {
 	if (isInternalLink) {
 		return (
@@ -23,6 +24,7 @@ const CustomLink: FC<Props> = ({
 			isExternal={isExternal}
 			rel="noopener noreferrer"
 			color={color}
+			aria-label={ariaLabel}
 		>
 			{children}
 		</Link>

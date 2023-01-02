@@ -10,13 +10,14 @@ export default function Articles({ data, content }) {
 		<>
 			<main>
 				<Flex
+					as="header"
 					gap="18px"
 					mb="50px"
-					mt="80px"
 					flexDirection={{ base: 'column', md: 'row' }}
+					alignItems={{ base: 'center' }}
 				>
 					<Image
-						objectFit="cover"
+						objectFit="contain"
 						borderRadius="md"
 						shadow="xl"
 						width="100px"
@@ -26,11 +27,7 @@ export default function Articles({ data, content }) {
 					/>
 					<Heading
 						as="h1"
-						bgGradient={[
-							'linear(to-tr, teal.300, yellow.400)',
-							'linear(to-t, blue.200, teal.500)',
-							'linear(to-b, orange.100, purple.300)'
-						]}
+						bgGradient={['linear(to-t, blue.200, teal.500)']}
 						bgClip="text"
 					>
 						{data.title}

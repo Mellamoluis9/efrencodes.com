@@ -14,13 +14,17 @@ const Footer = () => {
 				</CustomLink>
 			</Box>
 			<Box as="div">
-				{SOCIAL.filter(
-					(social) => Boolean(social.active) === !true
-				).map(({ name, href, content }) => (
-					<CustomLink href={href} key={name}>
-						<Text>{content}</Text>
-					</CustomLink>
-				))}
+				{SOCIAL.filter((social) => Boolean(social.footer) === true).map(
+					({ name, href, content, ariaLabel }) => (
+						<CustomLink
+							href={href}
+							key={name}
+							ariaLabel={ariaLabel}
+						>
+							<Text>{content}</Text>
+						</CustomLink>
+					)
+				)}
 			</Box>
 		</Flex>
 	)

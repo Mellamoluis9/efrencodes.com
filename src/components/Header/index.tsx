@@ -10,7 +10,7 @@ const Header: FC<Props> = ({ children }) => {
 			mt="80px"
 			mb="80px"
 			flexDirection={{ base: 'column', md: 'row' }}
-			alignItems="end"
+			alignItems={{ base: 'start', md: 'end' }}
 		>
 			{children}
 		</Flex>

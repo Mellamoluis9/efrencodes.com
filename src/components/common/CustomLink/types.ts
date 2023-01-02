@@ -6,4 +6,5 @@ export type Props = {
 	isInternalLink?: boolean
 	isExternal?: boolean
 	color?: string
+	ariaLabel?: string
 }

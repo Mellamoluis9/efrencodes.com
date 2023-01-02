@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {
 	Card,
 	Stack,
@@ -7,9 +6,9 @@ import {
 	Heading,
 	Badge,
 	Image,
-	Button
+	Text
 } from '@chakra-ui/react'
-import { ArrowRightIcon } from '@radix-ui/react-icons'
+import CustomLink from 'components/common/CustomLink'
 import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
@@ -24,15 +23,12 @@ const CardWithImage = ({ ...props }: Props) => {
 		>
 			<CardBody>
 				<Image
-					objectFit="cover"
+					objectFit="contain"
 					borderRadius="md"
 					width="100%"
 					height="300px"
 					src={props.src}
 					alt={props.alt}
-					_hover={{
-						transform: 'scale(1.1)'
-					}}
 				/>
 				<Heading as="h3" mt="15px" mb="24px">
 					{props.name}
@@ -53,17 +49,11 @@ const CardWithImage = ({ ...props }: Props) => {
 				</Stack>
 			</CardBody>
 			<CardFooter mt="24px">
-				<Button
-					as={Link}
-					href={props.href}
-					rightIcon={<ArrowRightIcon color="black" />}
-					colorScheme="pink"
-					variant="link"
-					fontSize="14px"
-					fontWeight="500"
-				>
-					Visitar página
-				</Button>
+				<CustomLink href={props.href} isExternal={true}>
+					<Text as="p" mt="20px" color="pink.600">
+						Visitar página
+					</Text>
+				</CustomLink>
 			</CardFooter>
 		</Card>
 	)
