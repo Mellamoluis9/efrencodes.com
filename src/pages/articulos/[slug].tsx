@@ -4,10 +4,21 @@ import rehypeHighlight from 'rehype-highlight'
 import { Image, Box, Heading, Flex } from '@chakra-ui/react'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
+import DefaultHead from 'components/DefaultHead'
 
 export default function Articles({ data, content }) {
+	const canonical = 'https://www.efrencodes.com/articulos/' + data.slug
+	const metaTagsDefault = {
+		title: data.title,
+		description: data.description,
+		image: data.ogImage,
+		keywords: data.keywords,
+		canonical,
+		creator: '@efrencodes'
+	}
 	return (
 		<>
+			<DefaultHead metaTags={metaTagsDefault} />
 			<main>
 				<Flex
 					as="header"
