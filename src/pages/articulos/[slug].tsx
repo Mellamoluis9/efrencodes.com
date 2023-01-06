@@ -1,3 +1,4 @@
+import { Head } from 'next/document'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeHighlight from 'rehype-highlight'
@@ -18,7 +19,9 @@ export default function Articles({ data, content }) {
 	}
 	return (
 		<>
-			<DefaultHead metaTags={metaTagsDefault} />
+			<Head>
+				<DefaultHead metaTags={metaTagsDefault} />
+			</Head>
 			<main>
 				<Flex
 					as="header"
