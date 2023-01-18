@@ -1,6 +1,6 @@
 import NextDocument, { Html, Main, NextScript } from 'next/document'
 import { Head } from 'next/document'
-import DefaultHead from 'components/DefaultHead'
+import DefaultHead from '@components/DefaultHead'
 import { metaTags, structuredData } from 'catalogs/metatags'
 
 export default class Document extends NextDocument {

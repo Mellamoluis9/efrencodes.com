@@ -1,6 +1,6 @@
 import { Flex, Divider } from '@chakra-ui/react'
-import Footer from 'components/Footer'
-import NavBar from 'components/NavBar'
+import Footer from '@components/Footer'
+import NavBar from '@components/NavBar'
 import { Props } from './types'
 
 const Layout = ({ children }: Props) => {

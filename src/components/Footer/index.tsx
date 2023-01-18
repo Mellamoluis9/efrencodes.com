@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import CustomLink from 'components/common/CustomLink'
+import CustomLink from '@components/common/CustomLink'
 
 const Footer = () => {
 	return (

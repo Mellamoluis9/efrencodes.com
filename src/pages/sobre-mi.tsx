@@ -8,7 +8,7 @@ import {
 	Link,
 	SimpleGrid
 } from '@chakra-ui/react'
-import Item from 'components/Item'
+import Item from '@components/Item'
 import { socialMedia as SOCIAL } from 'catalogs/social'
 
 const AboutHome = () => {

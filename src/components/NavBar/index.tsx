@@ -1,7 +1,7 @@
 import { Flex, Spacer, Text } from '@chakra-ui/react'
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import SocialMediaButton from 'components/common/SocialMediaButton'
-import CustomLink from 'components/common/CustomLink'
+import SocialMediaButton from '@components/common/SocialMediaButton'
+import CustomLink from '@components/common/CustomLink'
 
 const NavBar = () => {
 	return (

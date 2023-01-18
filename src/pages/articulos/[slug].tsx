@@ -5,7 +5,8 @@ import rehypeHighlight from 'rehype-highlight'
 import { Image, Box, Heading, Flex } from '@chakra-ui/react'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
-import DefaultHead from 'components/DefaultHead'
+import { ImageWrapper } from '@components/index'
+import DefaultHead from '@components/DefaultHead'
 
 export default function Articles({ data, content }) {
 	const canonical = 'https://www.efrencodes.com/articulos/' + data.slug
@@ -30,13 +31,10 @@ export default function Articles({ data, content }) {
 					flexDirection={{ base: 'column', md: 'row' }}
 					alignItems={{ base: 'center' }}
 				>
-					<Image
-						objectFit="contain"
-						borderRadius="md"
-						shadow="xl"
-						width="100px"
-						height="100px"
-						src={data.cover}
+					<ImageWrapper
+						width={100}
+						height={100}
+						thumbnail={data.cover}
 						alt={data.title}
 					/>
 					<Heading

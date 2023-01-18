@@ -17,7 +17,7 @@
 		"baseUrl": "./src/",
 		"paths": {
 			"@stitches": ["./stitches.config.ts"],
-			"components/*": ["./components/*"],
+			"@components/*": ["./components/*"],
 			"hooks/*": ["./hooks/*"],
 			"types/*": ["./types/*"],
 			"catalogs/*": ["./catalogs/*"],
