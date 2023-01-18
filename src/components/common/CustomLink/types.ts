@@ -1,10 +1,9 @@
 import React from 'react'
 
-export type Props = {
+export type CustomLinkProps = {
 	href?: string
 	children: React.ReactNode
 	isInternalLink?: boolean
 	isExternal?: boolean
-	color?: string
 	ariaLabel?: string
 }

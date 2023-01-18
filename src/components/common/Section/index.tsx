@@ -1,14 +1,13 @@
 import { FC } from 'react'
-import { Box, Heading, Text } from '@chakra-ui/react'
 import { Props } from './types'
 
 const Section: FC<Props> = ({ heading, subheading, children }) => {
 	return (
-		<Box as="section" py="3em">
-			<Heading as="h2">{heading}</Heading>
-			<Text as="p">{subheading}</Text>
+		<section className="py-2.5">
+			<h2 className="text-xl font-medium">{heading}</h2>
+			<p className="text-base">{subheading}</p>
 			{children}
-		</Box>
+		</section>
 	)
 }
 

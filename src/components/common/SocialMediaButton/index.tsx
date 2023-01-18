@@ -5,36 +5,19 @@ import {
 	TwitterLogoIcon
 } from '@radix-ui/react-icons'
 import { SocialTypeEnum } from 'catalogs/social/socialType'
-import { Props } from './types'
+import { SocialMediaButtonProps } from './types'
 
-const SocialMediaButton: FC<Props> = ({ type }) => {
-	const SIZE_ICON: number = 24
-	const COLOR_ICON: string = 'rgb(112, 113, 114)'
-
+const SocialMediaButton: FC<SocialMediaButtonProps> = ({
+	type,
+	color = 'rgb(112, 113, 114)',
+	size = 24
+}) => {
 	if (type === SocialTypeEnum.GITHUB)
-		return (
-			<GitHubLogoIcon
-				color={COLOR_ICON}
-				height={SIZE_ICON}
-				width={SIZE_ICON}
-			/>
-		)
+		return <GitHubLogoIcon color={color} height={size} width={size} />
 	else if (type === SocialTypeEnum.LINKEDIN)
-		return (
-			<LinkedInLogoIcon
-				color={COLOR_ICON}
-				height={SIZE_ICON}
-				width={SIZE_ICON}
-			/>
-		)
+		return <LinkedInLogoIcon color={color} height={size} width={size} />
 	else if (type === SocialTypeEnum.TWITTER)
-		return (
-			<TwitterLogoIcon
-				color={COLOR_ICON}
-				height={SIZE_ICON}
-				width={SIZE_ICON}
-			/>
-		)
+		return <TwitterLogoIcon color={color} height={size} width={size} />
 }
 
 export default SocialMediaButton

@@ -1,3 +1,3 @@
-import ImageWrapper from './ImageWrapper'
+import ImageWrapper from './common/ImageWrapper'
 
 export { ImageWrapper }

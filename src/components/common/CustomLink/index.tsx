@@ -1,33 +1,30 @@
 import { FC } from 'react'
-import NextLink from 'next/link'
-import { Link } from '@chakra-ui/react'
-import { Props } from './types'
+import Link from 'next/link'
+import { CustomLinkProps } from './types'
 
-const CustomLink: FC<Props> = ({
+const CustomLink: FC<CustomLinkProps> = ({
 	href = '#',
 	children,
 	isInternalLink = false,
 	isExternal = false,
-	color = '',
 	ariaLabel = ''
 }) => {
 	if (isInternalLink) {
 		return (
-			<Link as={NextLink} href={href} passHref legacyBehavior>
+			<Link href={href} passHref legacyBehavior>
 				<a>{children}</a>
 			</Link>
 		)
 	}
 	return (
-		<Link
+		<a
 			href={href}
-			isExternal={isExternal}
+			target={isExternal && '_blank'}
 			rel="noopener noreferrer"
-			color={color}
 			aria-label={ariaLabel}
 		>
 			{children}
-		</Link>
+		</a>
 	)
 }
 
