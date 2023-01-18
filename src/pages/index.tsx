@@ -22,13 +22,7 @@ const HomePage = ({
 					height={580 / 2}
 				/>
 				<Box>
-					<Heading
-						as="h1"
-						bgGradient="linear(to-l, #7928CA, #FF0080)"
-						bgClip="text"
-					>
-						Efren Martinez
-					</Heading>
+					<Heading as="h1">Efren Martinez</Heading>
 					<Heading as="h2">
 						Desarrollador Frontend Vuejs Reactjs
 					</Heading>

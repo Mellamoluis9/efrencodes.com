@@ -11,7 +11,7 @@
 	"keywords": [
 		"nextjs",
 		"typescript",
-		"chakra-ui",
+		"tailwindcss",
 		"mdx"
 	],
 	"bugs": {
@@ -27,9 +27,6 @@
 		"postbuild": "next-sitemap"
 	},
 	"dependencies": {
-		"@chakra-ui/react": "^2.4.4",
-		"@emotion/react": "^11.10.5",
-		"@emotion/styled": "^11.10.5",
 		"@radix-ui/react-icons": "^1.1.1",
 		"framer-motion": "^8.0.2",
 		"gray-matter": "^4.0.3",

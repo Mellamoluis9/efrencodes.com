@@ -22,7 +22,7 @@
 			"types/*": ["./types/*"],
 			"catalogs/*": ["./catalogs/*"],
 			"utils/*": ["./utils/*"],
-			"styles/*": ["./styles/*"]
+			"@styles/*": ["./styles/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
