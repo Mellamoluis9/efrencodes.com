@@ -5,10 +5,10 @@ import {
 	CardFooter,
 	Heading,
 	Badge,
-	Image,
 	Text
 } from '@chakra-ui/react'
-import CustomLink from 'components/common/CustomLink'
+import { ImageWrapper } from '@components/index'
+import CustomLink from '@components/common/CustomLink'
 import { Props } from './types'
 
 const CardWithImage = ({ ...props }: Props) => {
@@ -22,12 +22,10 @@ const CardWithImage = ({ ...props }: Props) => {
 			backgroundImage={props.backgroundImage}
 		>
 			<CardBody>
-				<Image
-					objectFit="contain"
-					borderRadius="md"
-					width="100%"
-					height="300px"
-					src={props.src}
+				<ImageWrapper
+					width={100}
+					height={300}
+					thumbnail={props.src}
 					alt={props.alt}
 				/>
 				<Heading as="h3" mt="15px" mb="24px">

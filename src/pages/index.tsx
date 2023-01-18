@@ -1,17 +1,11 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import {
-	Box,
-	Heading,
-	Text,
-	Highlight,
-	SimpleGrid,
-	Image
-} from '@chakra-ui/react'
+import { Box, Heading, Text, Highlight, SimpleGrid } from '@chakra-ui/react'
 import { Project } from 'catalogs/projects/projectType'
-import CardWithImage from 'components/CardWithImage'
-import Section from 'components/common/Section'
-import Header from 'components/Header'
-import Item from 'components/Item'
+import { ImageWrapper } from '@components/index'
+import CardWithImage from '@components/CardWithImage'
+import Section from '@components/common/Section'
+import Header from '@components/Header'
+import Item from '@components/Item'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -21,14 +15,11 @@ const HomePage = ({
 	return (
 		<>
 			<Header>
-				<Image
-					objectFit="cover"
-					borderRadius="lg"
-					shadow="lg"
-					width={{ base: '100px', md: '180px' }}
-					height={{ base: '100px', md: '180px' }}
-					src="https://res.cloudinary.com/efrencodes/image/upload/v1654747312/efrencodes.ts/perfil.webp"
-					alt="Efren Martinez"
+				<ImageWrapper
+					thumbnail="https://res.cloudinary.com/efrencodes/image/upload/v1654747312/efrencodes.ts/perfil.webp"
+					alt="Foto efren martinez"
+					width={976 / 2}
+					height={580 / 2}
 				/>
 				<Box>
 					<Heading

@@ -8,7 +8,8 @@ import {
 	Flex,
 	Box
 } from '@chakra-ui/react'
-import CustomLink from 'components/common/CustomLink'
+import { ImageWrapper } from '@components/index'
+import CustomLink from '@components/common/CustomLink'
 import { Props } from './types'
 
 const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
@@ -16,7 +17,12 @@ const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
 		<Card variant="outline" shadow="none" _hover={{ bg: '#fff7ed' }}>
 			<CardBody>
 				<Flex gap="24px" alignItems="center">
-					<Image src={cover} alt={name} width="40px" height="40px" />
+					<ImageWrapper
+						thumbnail={cover}
+						alt={name}
+						width={40}
+						height={40}
+					/>
 					<Box>
 						<CustomLink href={href} isExternal={isExternal}>
 							<Heading
