@@ -1,19 +1,18 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import CustomLink from '@components/common/CustomLink'
+import { CustomLink } from '@components/index'
 
 const Footer = () => {
 	return (
-		<Flex as="footer" gap="36px" my={6}>
-			<Box as="div">
+		<footer>
+			<div>
 				<CustomLink href="/" isInternalLink>
-					<Text>Inicio</Text>
+					<p>Inicio</p>
 				</CustomLink>
 				<CustomLink href="/sobre-mi" isInternalLink>
-					<Text>Sobre mí</Text>
+					<p>Sobre mí</p>
 				</CustomLink>
-			</Box>
-			<Box as="div">
+			</div>
+			<div>
 				{SOCIAL.filter((social) => Boolean(social.footer) === true).map(
 					({ name, href, content, ariaLabel }) => (
 						<CustomLink
@@ -21,12 +20,12 @@ const Footer = () => {
 							key={name}
 							ariaLabel={ariaLabel}
 						>
-							<Text>{content}</Text>
+							<p>{content}</p>
 						</CustomLink>
 					)
 				)}
-			</Box>
-		</Flex>
+			</div>
+		</footer>
 	)
 }
 

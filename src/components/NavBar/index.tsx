@@ -1,20 +1,17 @@
-import { Flex, Spacer, Text } from '@chakra-ui/react'
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import SocialMediaButton from '@components/common/SocialMediaButton'
-import CustomLink from '@components/common/CustomLink'
+import { SocialMediaButton, CustomLink } from '@components/index'
 
 const NavBar = () => {
 	return (
-		<Flex alignItems="center" as="nav" pb={12} height="100px">
-			<Spacer />
-			<Flex gap="12px">
+		<nav>
+			<div>
 				<CustomLink href="/" isInternalLink>
-					<Text fontSize="md">Inicio</Text>
+					<p>Inicio</p>
 				</CustomLink>
 				<CustomLink href="/sobre-mi" isInternalLink>
-					<Text fontSize="md">Sobre mí</Text>
+					<p>Sobre mí</p>
 				</CustomLink>
-				<Flex gap="12px" pr="12px">
+				<div>
 					{SOCIAL.filter((social) => social.active === !true).map(
 						({ name, href, ariaLabel }) => (
 							<CustomLink
@@ -27,9 +24,9 @@ const NavBar = () => {
 							</CustomLink>
 						)
 					)}
-				</Flex>
-			</Flex>
-		</Flex>
+				</div>
+			</div>
+		</nav>
 	)
 }
 

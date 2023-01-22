@@ -2,7 +2,6 @@ import { Head } from 'next/document'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeHighlight from 'rehype-highlight'
-import { Image, Box, Heading, Flex } from '@chakra-ui/react'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 import { ImageWrapper } from '@components/index'
@@ -24,30 +23,18 @@ export default function Articles({ data, content }) {
 				<DefaultHead metaTags={metaTagsDefault} />
 			</Head>
 			<main>
-				<Flex
-					as="header"
-					gap="18px"
-					mb="50px"
-					flexDirection={{ base: 'column', md: 'row' }}
-					alignItems={{ base: 'center' }}
-				>
+				<div>
 					<ImageWrapper
 						width={100}
 						height={100}
 						thumbnail={data.cover}
 						alt={data.title}
 					/>
-					<Heading
-						as="h1"
-						bgGradient={['linear(to-t, blue.200, teal.500)']}
-						bgClip="text"
-					>
-						{data.title}
-					</Heading>
-				</Flex>
-				<Box mb="200px">
+					<h1>{data.title}</h1>
+				</div>
+				<div>
 					<MDXRemote {...content} />
-				</Box>
+				</div>
 			</main>
 		</>
 	)

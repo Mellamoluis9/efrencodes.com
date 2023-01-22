@@ -16,7 +16,6 @@
 		"jsx": "preserve",
 		"baseUrl": "./src/",
 		"paths": {
-			"@stitches": ["./stitches.config.ts"],
 			"@components/*": ["./components/*"],
 			"hooks/*": ["./hooks/*"],
 			"types/*": ["./types/*"],

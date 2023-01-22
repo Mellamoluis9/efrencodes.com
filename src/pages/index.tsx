@@ -1,11 +1,12 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Box, Heading, Text, Highlight, SimpleGrid } from '@chakra-ui/react'
 import { Project } from 'catalogs/projects/projectType'
-import { ImageWrapper } from '@components/index'
-import CardWithImage from '@components/CardWithImage'
-import Section from '@components/common/Section'
-import Header from '@components/Header'
-import Item from '@components/Item'
+import {
+	ImageWrapper,
+	CardWithImage,
+	Section,
+	Header,
+	Item
+} from '@components/index'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -21,60 +22,24 @@ const HomePage = ({
 					width={976 / 2}
 					height={580 / 2}
 				/>
-				<Box>
-					<Heading as="h1">Efren Martinez</Heading>
-					<Heading as="h2">
-						Desarrollador Frontend Vuejs Reactjs
-					</Heading>
-					<Text as="p">
-						Desarrollador Frontend especializado en{' '}
-						<Highlight
-							query="JavaScript"
-							styles={{
-								px: '2',
-								py: '1',
-								rounded: 'full',
-								bg: '#fef08a'
-							}}
-						>
-							JavaScript
-						</Highlight>
-						. Enfocado en el desarrollo web trabajando
-						principalmente con tecnologías como{' '}
-						<Highlight
-							query="Vue.js"
-							styles={{
-								px: '2',
-								py: '1',
-								rounded: 'full',
-								bg: '#bbf7d0'
-							}}
-						>
-							Vue.js
-						</Highlight>{' '}
-						y{' '}
-						<Highlight
-							query="React.js"
-							styles={{
-								px: '2',
-								py: '1',
-								rounded: 'full',
-								bg: '#bae6fd'
-							}}
-						>
-							React.js
-						</Highlight>{' '}
-						con TypeScript.
-					</Text>
-				</Box>
+				<div>
+					<h1>Efren Martinez</h1>
+					<h2>Desarrollador Frontend Vuejs Reactjs</h2>
+					<p>
+						Desarrollador Frontend especializado en JavaScript .
+						Enfocado en el desarrollo web trabajando principalmente
+						con tecnologías comoVue.js y React.js con TypeScript.
+					</p>
+				</div>
 			</Header>
 			<Section
 				heading="Mis artículos"
 				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
 			>
-				<SimpleGrid pt="2em" width="100%" columns={{ base: 1, md: 1 }}>
+				<div>
 					{posts.map((element) => (
 						<Item
+							key={element?.data?.title}
 							name={element?.data?.title}
 							content={element?.data?.description}
 							cover={element?.data?.cover}
@@ -82,23 +47,16 @@ const HomePage = ({
 							isExternal={false}
 						/>
 					))}
-				</SimpleGrid>
+				</div>
 			</Section>
 			<Section
 				heading="Proyectos Destacados"
 				subheading="Algunos proyectos que he participado/construido."
 			>
-				<SimpleGrid
-					pt="2em"
-					width="100%"
-					columns={{ base: 1, md: 2 }}
-					spacingX="60px"
-					spacingY="60px"
-					mb="100px"
-				>
+				<div>
 					{projects.map((project) => (
 						<CardWithImage
-							key={project.name}
+							key={project?.name}
 							href={project.url}
 							src={project.image.src}
 							alt={project.image.alt}
@@ -107,7 +65,7 @@ const HomePage = ({
 							backgroundImage={project.backgroundImage}
 						/>
 					))}
-				</SimpleGrid>
+				</div>
 			</Section>
 		</>
 	)

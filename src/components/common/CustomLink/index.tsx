@@ -19,7 +19,7 @@ const CustomLink: FC<CustomLinkProps> = ({
 	return (
 		<a
 			href={href}
-			target={isExternal && '_blank'}
+			target={isExternal ? '_blank' : '_parent'}
 			rel="noopener noreferrer"
 			aria-label={ariaLabel}
 		>
