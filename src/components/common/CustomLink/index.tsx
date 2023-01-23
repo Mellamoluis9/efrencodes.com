@@ -7,12 +7,13 @@ const CustomLink: FC<CustomLinkProps> = ({
 	children,
 	isInternalLink = false,
 	isExternal = false,
-	ariaLabel = ''
+	className,
+	...rest
 }) => {
 	if (isInternalLink) {
 		return (
 			<Link href={href} passHref legacyBehavior>
-				<a>{children}</a>
+				<a {...rest}>{children}</a>
 			</Link>
 		)
 	}
@@ -21,7 +22,12 @@ const CustomLink: FC<CustomLinkProps> = ({
 			href={href}
 			target={isExternal ? '_blank' : '_parent'}
 			rel="noopener noreferrer"
-			aria-label={ariaLabel}
+			{...rest}
+			className={
+				className
+					? className
+					: 'hover:underline decoration-indigo-500 underline-offset-4 decoration-2'
+			}
 		>
 			{children}
 		</a>

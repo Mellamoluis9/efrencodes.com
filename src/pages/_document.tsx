@@ -14,20 +14,11 @@ export default class Document extends NextDocument {
 					/>
 					<script async src="https://cdn.splitbee.io/sb.js" />
 					<link
-						rel="preconnect"
-						href="https://fonts.googleapis.com"
-					/>
-					<link
-						rel="preconnect"
-						href="https://fonts.gstatic.com"
-						crossOrigin=""
-					/>
-					<link
 						rel="stylesheet"
 						href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_dark.css"
 					/>
 				</Head>
-				<body>
+				<body className="leading-loose bg-zinc-100 antialiased overflow-x-hidden">
 					<Main />
 					<NextScript />
 				</body>

@@ -20,13 +20,13 @@ export const socialMedia: Social[] = [
 		footer: true
 	},
 	{
-		active: false,
+		active: true,
 		name: SocialTypeEnum.MAIL,
 		href: 'mailto:efrencodes@gmail.com',
 		content: 'Envíame un correo',
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672199846/www.efrencodes.com/tecnologies/google-gmail.svg',
 		ariaLabel: 'Enviame un correo a efrencodes@gmail.com',
-		footer: false
+		footer: true
 	},
 	{
 		active: true,

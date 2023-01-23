@@ -14,7 +14,7 @@ const ImageWrapper: FC<ImageWrapperProps> = ({
 			alt={alt}
 			width={width}
 			height={height}
-			className="h-full w-full mix-blend-overlay rounded-md shadow-lg shadow-cyan-500/50"
+			className="mix-blend-overlay rounded-md"
 		/>
 	)
 }
