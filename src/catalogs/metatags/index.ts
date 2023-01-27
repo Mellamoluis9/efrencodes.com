@@ -1,9 +1,10 @@
 const metaTagsDefault = {
 	title: 'Efrén Martínez ✦ @efrencodes',
-	description: 'Desarrollador Frontend especializado en Javascript.',
-	image: '',
+	description:
+		'Desarrollador Frontend especializado en #javascript #vue #react #typescript',
+	image: 'https://res.cloudinary.com/efrencodes/image/upload/v1674800149/www.efrencodes.com/og-image-efrencodes.webp',
 	keywords:
-		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico',
+		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript',
 	canonical: 'https://www.efrencodes.com/',
 	creator: '@efrencodes'
 }

@@ -46,7 +46,7 @@ const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
 			<meta property="og:locale" content="es_MX" />
 			<meta property="og:site_name" content="efrencodes.com" />
 			{/* Twitter */}
-			<meta property="twitter:card" content="summary_large_image" />
+			<meta property="twitter:card" content="website" />
 			<meta property="twitter:url" content={metaTags.canonical} />
 			<meta property="twitter:title" content={metaTags.title} />
 			<meta
