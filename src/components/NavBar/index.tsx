@@ -4,7 +4,9 @@ import { SocialMediaButton, CustomLink } from '@components/index'
 const NavBar = () => {
 	return (
 		<nav className="h-[100px] my-3 flex flex-row items-center justify-end gap-4">
-			<p className="text-gray-900">Contáctame en: </p>
+			<CustomLink href="/" isInternalLink ariaLabel="Inicio">
+				<p>Inicio</p>
+			</CustomLink>
 			{SOCIAL.filter((social) => social.active === !true).map(
 				({ name, href, ariaLabel }) => (
 					<CustomLink

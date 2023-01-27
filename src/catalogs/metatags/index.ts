@@ -1,5 +1,5 @@
 const metaTagsDefault = {
-	title: 'Efrén Martínez ✦ @efrecodes',
+	title: 'Efrén Martínez ✦ @efrencodes',
 	description: 'Desarrollador Frontend especializado en Javascript.',
 	image: '',
 	keywords:

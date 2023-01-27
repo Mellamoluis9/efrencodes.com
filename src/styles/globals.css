@@ -5,3 +5,9 @@
 p {
 	@apply text-base font-normal tracking-wide leading-loose text-gray-600;
 }
+pre {
+	@apply bg-[#282c34] rounded-md shadow-lg p-8 overflow-auto;
+}
+code {
+	@apply text-[#e5e7eb];
+}

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
@@ -31,7 +32,7 @@ module.exports = {
 			const classes = {
 				'.bg-blobs': {
 					backgroundImage: 'radial-gradient(#f1f1f1 1px, #FFF 1px)',
-					backgroundSize: '25px 25px'
+					backgroundSize: '40px 40px'
 				}
 			}
 
