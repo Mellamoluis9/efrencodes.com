@@ -1,7 +1,6 @@
 const metaTagsDefault = {
-	title: 'Efrén Martínez ✦ Desarrollador Frontend Vue React',
-	description:
-		'Desarrollador Frontend especializado en JavaScript. Enfocado en desarrollo web trabajando con tecnologías como Vue y React con TypeScript.',
+	title: 'Efrén Martínez ✦ @efrecodes',
+	description: 'Desarrollador Frontend especializado en Javascript.',
 	image: '',
 	keywords:
 		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico',

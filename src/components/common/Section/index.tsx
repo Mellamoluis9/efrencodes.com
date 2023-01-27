@@ -3,7 +3,7 @@ import { Props } from './types'
 
 const Section: FC<Props> = ({ heading, subheading, children }) => {
 	return (
-		<section className="py-4">
+		<section className="pt-16 pb-6">
 			<h2 className="text-xl font-medium tracking-wide text-gray-800">
 				{heading}
 			</h2>

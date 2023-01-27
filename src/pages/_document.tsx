@@ -18,7 +18,7 @@ export default class Document extends NextDocument {
 						href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_dark.css"
 					/>
 				</Head>
-				<body className="leading-loose bg-zinc-100 antialiased overflow-x-hidden">
+				<body className="leading-loose bg-blobs antialiased overflow-x-hidden">
 					<Main />
 					<NextScript />
 				</body>

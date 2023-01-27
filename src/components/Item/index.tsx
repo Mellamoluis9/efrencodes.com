@@ -4,7 +4,7 @@ import { Props } from './types'
 
 const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
 	return (
-		<article className="flex my-6 gap-4">
+		<article className="flex pt-8 gap-4">
 			<ImageWrapper thumbnail={cover} alt={name} width={80} height={80} />
 			<div>
 				<CustomLink href={href} isInternalLink={isExternal}>

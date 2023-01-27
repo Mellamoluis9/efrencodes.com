@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Footer, NavBar } from '@components/index'
+import { NavBar } from '@components/index'
 import { Props } from './types'
 import { Inter } from '@next/font/google'
 
@@ -15,7 +15,6 @@ const Layout: FC<Props> = ({ children }) => {
 		>
 			<NavBar />
 			{children}
-			<Footer />
 		</div>
 	)
 }

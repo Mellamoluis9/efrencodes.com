@@ -1,29 +1,33 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Project } from 'catalogs/projects/projectType'
-import { CardWithImage, Section, Header, Item } from '@components/index'
+import { Section, Header, Item } from '@components/index'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
-	projects,
 	posts
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<>
 			<Header>
-				<h1 className="text-3xl font-medium text-gray-800">
-					Efren Martinez
+				<h1 className="text-3xl font-medium text-gray-900 leading-normal">
+					Efrén Martínez
 				</h1>
-				<h2 className="text-2xl font-medium text-gray-800">
-					Desarrollador Frontend Vuejs Reactjs
+				<h2 className="text-2xl font-medium text-gray-700 leading-relaxed">
+					Desarrollador Frontend
 				</h2>
 				<p>
-					Desarrollador Frontend especializado en JavaScript. Enfocado
+					Desarrollador Frontend especializado en Javascript. Enfocado
 					en el desarrollo web trabajando principalmente con
-					tecnologías como Vue.js y React.js con Typescript.
+					tecnologías como{' '}
+					<span className="text-gray-700 font-medium">#vue</span>,{' '}
+					<span className="text-gray-700 font-medium">#react</span> y{' '}
+					<span className="text-gray-700 font-medium">
+						#typescript
+					</span>
+					.
 				</p>
 			</Header>
 			<Section
-				heading="Mis artículos"
+				heading="Últimos artículos"
 				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
 			>
 				{posts.map((element) => (
@@ -37,38 +41,17 @@ const HomePage = ({
 					/>
 				))}
 			</Section>
-			<Section
-				heading="Proyectos Destacados"
-				subheading="Algunos proyectos que he participado/construido."
-			>
-				{projects.map((project) => (
-					<CardWithImage
-						key={project?.name}
-						href={project.url}
-						src={project.image.src}
-						alt={project.image.alt}
-						name={project.name}
-						tecnologies={project.tecnologies}
-						backgroundImage={project.backgroundImage}
-					/>
-				))}
-			</Section>
 		</>
 	)
 }
 
 export const getStaticProps: GetStaticProps<{
-	projects: Project[]
 	posts
 }> = async () => {
-	const URL = `${process.env.API_URL}api/projects`
-	const res = await fetch(URL)
-	const projects: Project[] = await res.json()
 	const posts = getPosts()
 
 	return {
 		props: {
-			projects,
 			posts
 		}
 	}
