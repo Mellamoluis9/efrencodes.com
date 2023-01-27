@@ -13,10 +13,6 @@ export default class Document extends NextDocument {
 						structuredData={structuredData}
 					/>
 					<script async src="https://cdn.splitbee.io/sb.js" />
-					<link
-						rel="stylesheet"
-						href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/solarized_dark.css"
-					/>
 				</Head>
 				<body className="leading-loose bg-blobs antialiased overflow-x-hidden">
 					<Main />

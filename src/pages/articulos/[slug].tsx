@@ -1,44 +1,32 @@
-import { Head } from 'next/document'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
-import rehypeHighlight from 'rehype-highlight'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 import { ImageWrapper } from '@components/index'
-import DefaultHead from '@components/DefaultHead'
 
-export default function Articles({ data, content }) {
-	const canonical = 'https://www.efrencodes.com/articulos/' + data.slug
-	const metaTagsDefault = {
-		title: data.title,
-		description: data.description,
-		image: data.ogImage,
-		keywords: data.keywords,
-		canonical,
-		creator: '@efrencodes'
-	}
+const Articles = ({ data, content }) => {
 	return (
-		<>
-			<Head>
-				<DefaultHead metaTags={metaTagsDefault} />
-			</Head>
-			<main>
-				<div>
-					<ImageWrapper
-						width={100}
-						height={100}
-						thumbnail={data.cover}
-						alt={data.title}
-					/>
-					<h1>{data.title}</h1>
-				</div>
-				<div>
-					<MDXRemote {...content} />
-				</div>
-			</main>
-		</>
+		<main>
+			<section className="pt-16 pb-6">
+				<ImageWrapper
+					width={100}
+					height={100}
+					thumbnail={data.cover}
+					alt={data.title}
+				/>
+				<h1 className="text-3xl font-medium text-gray-900 leading-normal pt-4">
+					{data.title}
+				</h1>
+				<p className="italic text-sm">{data.description}</p>
+			</section>
+			<div className="pt-4 pb-[150px]">
+				<MDXRemote {...content} />
+			</div>
+		</main>
 	)
 }
+
+export default Articles
 
 export const getStaticPaths = async () => {
 	const posts = await getPosts()
@@ -53,12 +41,7 @@ export const getStaticProps = async ({ params }) => {
 	const post = await getPost(params.slug)
 	const mdxSource = await serialize(post.content, {
 		parseFrontmatter: true,
-		scope: {},
-		mdxOptions: {
-			remarkPlugins: [],
-			rehypePlugins: [rehypeHighlight],
-			format: 'mdx'
-		}
+		scope: {}
 	})
 	return {
 		props: {

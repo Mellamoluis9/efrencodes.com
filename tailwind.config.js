@@ -26,6 +26,7 @@ module.exports = {
 		}
 	},
 	plugins: [
+		require('@tailwindcss/typography'),
 		plugin(function ({ addUtilities }) {
 			const classes = {
 				'.bg-blobs': {
