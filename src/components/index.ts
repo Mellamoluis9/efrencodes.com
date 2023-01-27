@@ -3,7 +3,7 @@ import { CustomLink, ImageWrapper, Section, SocialMediaButton } from './common'
 import HeadSeo from './DefaultHead'
 import Footer from './Footer'
 import Header from './Header'
-import Item from './Item'
+import Article from './Article'
 import Layout from './Layout'
 import NavBar from './NavBar'
 
@@ -16,7 +16,7 @@ export {
 	HeadSeo,
 	Footer,
 	Header,
-	Item,
+	Article,
 	Layout,
 	NavBar
 }

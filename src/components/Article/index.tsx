@@ -2,7 +2,13 @@ import { FC } from 'react'
 import { ImageWrapper, CustomLink } from '@components/index'
 import { Props } from './types'
 
-const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
+const Article: FC<Props> = ({
+	name,
+	content,
+	cover,
+	href,
+	isExternal = true
+}) => {
 	return (
 		<article className="flex pt-8 gap-4">
 			<ImageWrapper thumbnail={cover} alt={name} width={80} height={80} />
@@ -18,4 +24,4 @@ const Item: FC<Props> = ({ name, content, cover, href, isExternal = true }) => {
 	)
 }
 
-export default Item
+export default Article

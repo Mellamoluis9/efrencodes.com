@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import Item from '@components/Item'
+import Item from '@components/Article'
 import { socialMedia as SOCIAL } from 'catalogs/social'
 import { CustomLink } from '@components/index'
 

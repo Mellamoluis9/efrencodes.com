@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Section, Header, Item } from '@components/index'
+import { Section, Header, Article } from '@components/index'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -31,7 +31,7 @@ const HomePage = ({
 				subheading="Escribo artículos donde comparto lo que aprendo en mi día a día y que espero pueda servir a más gente."
 			>
 				{posts.map((element) => (
-					<Item
+					<Article
 						key={element?.data?.title}
 						name={element?.data?.title}
 						content={element?.data?.description}
