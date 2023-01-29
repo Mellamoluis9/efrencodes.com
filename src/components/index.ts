@@ -1,6 +1,6 @@
 import CardWithImage from './CardWithImage'
 import { CustomLink, ImageWrapper, Section, SocialMediaButton } from './common'
-import HeadSeo from './DefaultHead'
+import HeadSeo from './HeadSeo'
 import Footer from './Footer'
 import Header from './Header'
 import Article from './Article'

@@ -1,13 +1,14 @@
 ## Efren Martinez - Frontend Developer
 
-A portfolio built on Nextjs, TypeScript and Chakra UI. Hosted in ▲ Vercel.
+A portfolio built on Nextjs, TypeScript and Tailwindcss. Hosted in ▲ Vercel.
+![](https://res.cloudinary.com/efrencodes/image/upload/v1675023733/www.efrencodes.com/project.ts/efrencodes.webp)
 
-[Live Demo](#)
+[Live Demo](https://efrencodes.com)
 
 ### Crafted with:
 
 -   [Next.js](https://nextjs.org/)
--   [Chakra UI](https://chakra-ui.com/) for styling
+-   [Tailwindcss](https://tailwindcss.com/)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [Vercel](https://vercel.com/) for hosting
 -   [Splitbee](https://app.splitbee.io/) for analytics
@@ -19,6 +20,8 @@ Install dependencies:
 
 ```bash
 yarn install
+# or
+npm install
 ```
 
 Setup environment variables:

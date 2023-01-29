@@ -14,7 +14,7 @@ const HomePage = ({
 				<HeadSeo metadata={metadataDefault} />
 			</Head>
 			<Header>
-				<h1 className="text-3xl font-semibold text-gray-900 leading-normal">
+				<h1 className="text-3xl font-medium text-gray-900 leading-normal">
 					Efrén martínez
 				</h1>
 				<h2 className="text-2xl font-medium text-gray-700 leading-relaxed">
