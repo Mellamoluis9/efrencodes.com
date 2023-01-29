@@ -1,4 +1,4 @@
 export type Props = {
-	metaTags: any
-	structuredData?: any
+	metadata: any
+	schemaPage?: any
 }

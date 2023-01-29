@@ -1,13 +1,37 @@
+import Head from 'next/head'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
+import rehypeHighlight from 'rehype-highlight'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
-import { ImageWrapper } from '@components/index'
-import rehypeHighlight from 'rehype-highlight'
+import { ImageWrapper, HeadSeo } from '@components/index'
+import { metadataProps } from 'catalogs/metatags'
 
 const Articles = ({ data, content }) => {
+	const metadataPost: metadataProps = {
+		url: `https://efrencodes.com/articulos/${data.slug}`,
+		title: data.title,
+		description: data.description,
+		keywords: data.keywords,
+		openGraph: {
+			url: `https://efrencodes.com/articulos/${data.slug}`,
+			siteName: 'Efrén Martínez ✦ @efrencodes',
+			images: {
+				url: data.ogImage,
+				width: 1920,
+				height: 1080
+			},
+			locale: 'es-MX',
+			type: 'website',
+			creator: '@efrencodes'
+		}
+	}
 	return (
 		<main>
+			<Head>
+				<title>{metadataPost.title}</title>
+				<HeadSeo metadata={metadataPost} />
+			</Head>
 			<section className="pt-16 pb-6">
 				<ImageWrapper
 					width={100}

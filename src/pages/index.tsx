@@ -1,5 +1,7 @@
+import Head from 'next/head'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Section, Header, Article } from '@components/index'
+import { Section, Header, Article, HeadSeo } from '@components/index'
+import { metadataDefault } from 'catalogs/metatags'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({
@@ -7,6 +9,10 @@ const HomePage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<>
+			<Head>
+				<title>{metadataDefault.title}</title>
+				<HeadSeo metadata={metadataDefault} />
+			</Head>
 			<Header>
 				<h1 className="text-3xl font-semibold text-gray-900 leading-normal">
 					Efrén martínez

@@ -1,15 +1,41 @@
-const metaTagsDefault = {
+export interface metadataProps {
+	url: string
+	title: string
+	description: string
+	keywords: string
+	openGraph: {
+		url: string
+		siteName: string
+		images: {
+			url: string
+			width: number
+			height: number
+		}
+		locale: string
+		type: string
+		creator: string
+	}
+}
+
+export const metadataDefault: metadataProps = {
+	url: 'https://efrencodes.com',
 	title: 'Efrén Martínez ✦ @efrencodes',
 	description:
 		'Desarrollador Frontend especializado en #javascript #vue #react #typescript',
-	image: 'https://res.cloudinary.com/efrencodes/image/upload/v1674800149/www.efrencodes.com/og-image-efrencodes.webp',
 	keywords:
 		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript',
-	canonical: 'https://www.efrencodes.com/',
-	creator: '@efrencodes'
-}
-export const metaTags = {
-	...metaTagsDefault
+	openGraph: {
+		url: 'https://efrencodes.com',
+		siteName: 'Efrén Martínez ✦ @efrencodes',
+		images: {
+			url: 'https://res.cloudinary.com/efrencodes/image/upload/v1674800149/www.efrencodes.com/og-image-efrencodes.webp',
+			width: 1920,
+			height: 1080
+		},
+		locale: 'es-MX',
+		type: 'website',
+		creator: '@efrencodes'
+	}
 }
 
 export const structuredData = {

@@ -1,20 +1,18 @@
 import { FC, Fragment } from 'react'
 import { Props } from './types'
 
-const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
+const HeadSeo: FC<Props> = ({ metadata, schemaPage }) => {
 	return (
 		<Fragment>
-			<meta charSet="utf-8" />
-			{structuredData && (
+			{schemaPage && (
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(structuredData)
+						__html: JSON.stringify(schemaPage)
 					}}
 				/>
 			)}
-			<title>{metaTags.title}</title>
-			<link rel="canonical" href={metaTags.canonical} />
+			<link rel="canonical" href={metadata.url} />
 			<link
 				type="text/plain"
 				rel="author"
@@ -25,38 +23,62 @@ const HeadSeo: FC<Props> = ({ metaTags, structuredData }) => {
 				content="width=device-width,initial-scale=1"
 			/>
 			<meta name="google" content="notranslate" />
-			<meta name="msapplication-TileColor" content="#0099ff" />
+			<meta name="msapplication-TileColor" content="#d4d4d8" />
 			<meta name="robots" content="index, follow" />
-			<meta name="apple-mobile-web-app-title" content="efrencodes.com" />
-			<meta name="application-name" content="efrencodes.com" />
-			<meta name="theme-color" content="#0099ff" />
-			<meta name="title" content={metaTags.title} />
-			<meta name="description" content={metaTags.description} />
-			<meta name="keywords" content={metaTags.keywords} />
-			<meta name="author" content="Efrén Martínez" />
+			<meta name="apple-mobile-web-app-title" content={metadata.url} />
+			<meta name="application-name" content={metadata.url} />
+			<meta name="theme-color" content="#d4d4d8" />
+			<meta name="title" content={metadata?.title} />
+			<meta name="description" content={metadata.description} />
+			<meta name="keywords" content={metadata.keywords} />
+			<meta name="author" content={metadata.openGraph.siteName} />
 			{/* Open Graph / Facebook */}
-			<meta property="og:type" content="website" />
-			<meta property="og:url" content={metaTags.canonical} />
-			<meta property="og:title" content={metaTags.title} />
-			<meta property="og:description" content={metaTags.description} />
-			<meta property="og:image" content={metaTags.image} />
-			<meta property="og:image:alt" content={metaTags.title} />
-			<meta property="og:image:width" content="1200" />
-			<meta property="og:image:height" content="630" />
-			<meta property="og:locale" content="es_MX" />
-			<meta property="og:site_name" content="efrencodes.com" />
+			<meta property="og:type" content={metadata.openGraph.type} />
+			<meta property="og:url" content={metadata.openGraph.url} />
+			<meta property="og:title" content={metadata?.title} />
+			<meta property="og:description" content={metadata.description} />
+			<meta property="og:image" content={metadata.openGraph.images.url} />
+			<meta
+				property="og:image:alt"
+				content={metadata.openGraph.siteName}
+			/>
+			<meta
+				property="og:image:width"
+				content={metadata.openGraph.images.width}
+			/>
+			<meta
+				property="og:image:height"
+				content={metadata.openGraph.images.height}
+			/>
+			<meta property="og:locale" content={metadata.openGraph.locale} />
+			<meta
+				property="og:site_name"
+				content={metadata.openGraph.siteName}
+			/>
 			{/* Twitter */}
-			<meta property="twitter:card" content="website" />
-			<meta property="twitter:url" content={metaTags.canonical} />
-			<meta property="twitter:title" content={metaTags.title} />
+			<meta property="twitter:card" content={metadata.openGraph.type} />
+			<meta property="twitter:url" content={metadata.openGraph.url} />
+			<meta
+				property="twitter:title"
+				content={metadata.openGraph.siteName}
+			/>
 			<meta
 				property="twitter:description"
-				content={metaTags.description}
+				content={metadata.description}
 			/>
-			<meta property="twitter:image" content={metaTags.image} />
-			<meta property="twitter:creator" content={metaTags.creator} />
-			<meta property="twitter:site" content={metaTags.creator} />
-			<meta property="twitter:image:alt" content={metaTags.title} />
+			<meta
+				property="twitter:image"
+				content={metadata.openGraph.images.url}
+			/>
+			<meta
+				property="twitter:creator"
+				content={metadata.openGraph.creator}
+			/>
+			<meta
+				property="twitter:site"
+				content={metadata.openGraph.siteName}
+			/>
+			<meta property="twitter:image:alt" content={metadata?.title} />
 			{/* Bing Webmaster Tools */}
 			<meta
 				name="msvalidate.01"
