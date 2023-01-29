@@ -10,14 +10,14 @@ const Article: FC<Props> = ({
 	isExternal = true
 }) => {
 	return (
-		<article className="flex pt-8 gap-4">
+		<article className="flex py-8 px-4 gap-4 hover:shadow-sm hover:rounded hover:bg-gradient-to-r hover:from-indigo-50 hover:via-purple-50 hover:to-pink-50">
 			<ImageWrapper thumbnail={cover} alt={name} width={80} height={80} />
 			<div>
 				<CustomLink href={href} isInternalLink={isExternal}>
 					<h1 className="text-lg font-medium text-gray-800 leading-normal mb-2">
 						{name}
 					</h1>
-					<p className="leading-normal">{content}</p>
+					<p className="leading-normal italic">{content}</p>
 				</CustomLink>
 			</div>
 		</article>

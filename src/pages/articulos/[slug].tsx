@@ -3,6 +3,7 @@ import { serialize } from 'next-mdx-remote/serialize'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 import { ImageWrapper } from '@components/index'
+import rehypeHighlight from 'rehype-highlight'
 
 const Articles = ({ data, content }) => {
 	return (
@@ -21,7 +22,7 @@ const Articles = ({ data, content }) => {
 			</section>
 			<div
 				className="pt-4 pb-[150px] prose-a:text-pink-600 prose-a:underline prose-h2:text-xl prose-h2:font-medium
-				prose-h2:tracking-wide prose-h2:text-gray-800 prose-strong:text-gray-900 prose-strong:font-medium
+				prose-h2:tracking-wide prose-h2:text-gray-800 prose-strong:text-gray-900 prose-strong:font-semibold
 				prose-strong:lining-nums prose-ul:list-disc prose-ul:mt-4 prose-ul:mb-4 prose-ul:list-inside prose-li:text-gray-600
 				prose-li:font-normal prose-li:text-base"
 			>
@@ -46,7 +47,8 @@ export const getStaticProps = async ({ params }) => {
 	const post = await getPost(params.slug)
 	const mdxSource = await serialize(post.content, {
 		parseFrontmatter: true,
-		scope: {}
+		scope: {},
+		mdxOptions: { rehypePlugins: [rehypeHighlight] }
 	})
 	return {
 		props: {

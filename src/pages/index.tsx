@@ -8,19 +8,22 @@ const HomePage = ({
 	return (
 		<>
 			<Header>
-				<h1 className="text-3xl font-medium text-gray-900 leading-normal">
-					Efrén Martínez
+				<h1 className="text-3xl font-semibold text-gray-900 leading-normal">
+					Efrén martínez
 				</h1>
 				<h2 className="text-2xl font-medium text-gray-700 leading-relaxed">
-					Desarrollador Frontend
+					Desarrollador frontend
 				</h2>
 				<p>
-					Desarrollador Frontend especializado en Javascript. Enfocado
-					en el desarrollo web trabajando principalmente con
+					Desarrollador Frontend especializado en{' '}
+					<span className="text-yellow-400 font-medium">
+						#javascript
+					</span>
+					. Enfocado en el desarrollo web principalmente con
 					tecnologías como{' '}
-					<span className="text-gray-700 font-medium">#vue</span>,{' '}
-					<span className="text-gray-700 font-medium">#react</span> y{' '}
-					<span className="text-gray-700 font-medium">
+					<span className="text-green-500 font-medium">#vue</span>,{' '}
+					<span className="text-blue-500 font-medium">#react</span> y{' '}
+					<span className="text-cyan-500 font-medium">
 						#typescript
 					</span>
 					.
