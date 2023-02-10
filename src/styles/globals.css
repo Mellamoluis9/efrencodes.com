@@ -7,3 +7,6 @@ p {
 pre {
 	@apply shadow-xl;
 }
+code {
+	@apply bg-[rgba(0,0,0,6%)] text-[1a1a1a] p-1.5 rounded-md;
+}

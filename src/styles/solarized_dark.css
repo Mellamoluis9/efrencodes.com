@@ -1,11 +1,10 @@
 @tailwind utilities;
 .hljs {
 	display: block;
+	background: #101213;
 	overflow-x: auto;
-	background: #002b36;
-	color: #839496;
 	-webkit-text-size-adjust: none;
-	@apply p-6 rounded;
+	@apply p-6 rounded text-white;
 }
 .diff .hljs-header,
 .hljs-comment,
@@ -13,7 +12,7 @@
 .hljs-javadoc,
 .hljs-pi,
 .lisp .hljs-string {
-	color: #586e75;
+	color: #6c8998;
 }
 .css .hljs-tag,
 .hljs-addition,
@@ -23,7 +22,7 @@
 .hljs-winutils,
 .method,
 .nginx .hljs-title {
-	color: #859900;
+	@apply text-yellow-400;
 }
 .hljs-command,
 .hljs-dartdoc,
@@ -36,7 +35,7 @@
 .hljs-string,
 .hljs-tag .hljs-value,
 .tex .hljs-formula {
-	color: #2aa198;
+	@apply text-green-500;
 }
 .css .hljs-function,
 .hljs-built_in,
@@ -48,7 +47,7 @@
 .hljs-name,
 .hljs-title,
 .vhdl .hljs-literal {
-	color: #268bd2;
+	@apply text-sky-400;
 }
 .hljs-attribute,
 .hljs-class .hljs-title,
@@ -59,7 +58,7 @@
 .hljs-variable,
 .lisp .hljs-body,
 .smalltalk .hljs-number {
-	color: #b58900;
+	@apply text-amber-400;
 }
 .css .hljs-pseudo,
 .diff .hljs-change,
@@ -74,14 +73,14 @@
 .hljs-subst,
 .hljs-symbol,
 .hljs-symbol .hljs-string {
-	color: #cb4b16;
+	@apply text-pink-500;
 }
 .hljs-deletion,
 .hljs-important {
-	color: #dc322f;
+	@apply text-pink-400;
 }
 .hljs-link_label {
-	color: #6c71c4;
+	@apply text-violet-500;
 }
 .tex .hljs-formula {
 	background: #073642;
