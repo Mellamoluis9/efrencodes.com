@@ -21,7 +21,7 @@ const HomePage = ({
 					Desarrollador frontend
 				</h2>
 				<p>
-					Desarrollador Frontend especializado en{' '}
+					Desarrollador frontend especializado en{' '}
 					<span className="text-yellow-400 font-medium">
 						#javascript
 					</span>
