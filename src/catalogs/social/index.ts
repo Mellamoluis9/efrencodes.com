@@ -29,7 +29,7 @@ export const socialMedia: Social[] = [
 		footer: true
 	},
 	{
-		active: true,
+		active: false,
 		name: SocialTypeEnum.TWITTER,
 		href: 'https://twitter.com/efrencodes',
 		content: 'Preguntame o escríbeme @',

@@ -33,7 +33,7 @@ export const metadataDefault: metadataProps = {
 			height: 1080
 		},
 		locale: 'es-MX',
-		type: 'website',
+		type: 'summary_large_image',
 		creator: '@efrencodes'
 	}
 }

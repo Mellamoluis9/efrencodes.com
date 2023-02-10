@@ -14,7 +14,7 @@ const Articles = ({ data, content }) => {
 		description: data.description,
 		keywords: data.keywords,
 		openGraph: {
-			url: `https://efrencodes.com/articulos/${data.slug}`,
+			url: `https://efrencodes.com`,
 			siteName: 'Efrén Martínez ✦ @efrencodes',
 			images: {
 				url: data.ogImage,
@@ -22,7 +22,7 @@ const Articles = ({ data, content }) => {
 				height: 1080
 			},
 			locale: 'es-MX',
-			type: 'website',
+			type: 'summary_large_image',
 			creator: '@efrencodes'
 		}
 	}
