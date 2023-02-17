@@ -19,14 +19,14 @@ export interface metadataProps {
 
 export const metadataDefault: metadataProps = {
 	url: 'https://efrencodes.com',
-	title: 'Efrén Martínez ✦ @efrencodes',
+	title: 'Efrén Martínez - Desarrollador Frontend',
 	description:
-		'Desarrollador Frontend especializado en #javascript #vue #react #typescript',
+		'Desarrollador Frontend especializado en #javascript #vue #react #typescript. Aprendiendo #flutter #dart',
 	keywords:
-		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript',
+		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript,tailwindcss',
 	openGraph: {
 		url: 'https://efrencodes.com',
-		siteName: 'Efrén Martínez ✦ @efrencodes',
+		siteName: 'Efrén Martínez - Desarrollador Frontend',
 		images: {
 			url: 'https://res.cloudinary.com/efrencodes/image/upload/v1674800149/www.efrencodes.com/og-image-efrencodes.webp',
 			width: 1920,
