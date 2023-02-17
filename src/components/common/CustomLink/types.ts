@@ -7,4 +7,5 @@ export type CustomLinkProps = {
 	isExternal?: boolean
 	ariaLabel?: string
 	className?: string
+	nameEvent?: string
 }

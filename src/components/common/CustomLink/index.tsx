@@ -8,6 +8,7 @@ const CustomLink: FC<CustomLinkProps> = ({
 	isInternalLink = false,
 	isExternal = false,
 	className,
+	nameEvent,
 	...rest
 }) => {
 	if (isInternalLink) {
@@ -28,6 +29,7 @@ const CustomLink: FC<CustomLinkProps> = ({
 					? className
 					: 'hover:underline decoration-indigo-500 underline-offset-4 decoration-2'
 			}
+			data-splitbee-event={nameEvent}
 		>
 			{children}
 		</a>

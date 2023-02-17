@@ -8,6 +8,7 @@ export const socialMedia: Social[] = [
 		content: 'Ve mis proyectos',
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196109/www.efrencodes.com/tecnologies/github.svg',
 		ariaLabel: 'Visita mi perfil en Github',
+		nameEvent: 'github',
 		footer: true
 	},
 	{
@@ -17,6 +18,7 @@ export const socialMedia: Social[] = [
 		content: 'Conecta conmigo',
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196105/www.efrencodes.com/tecnologies/linkedin.svg',
 		ariaLabel: 'Visita mi perfil en Linkedln',
+		nameEvent: 'linkedln',
 		footer: true
 	},
 	{
@@ -26,6 +28,7 @@ export const socialMedia: Social[] = [
 		content: 'Envíame un correo',
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672199846/www.efrencodes.com/tecnologies/google-gmail.svg',
 		ariaLabel: 'Enviame un correo a efrencodes@gmail.com',
+		nameEvent: 'mail',
 		footer: true
 	},
 	{
@@ -35,6 +38,7 @@ export const socialMedia: Social[] = [
 		content: 'Preguntame o escríbeme @',
 		cover: 'https://res.cloudinary.com/efrencodes/image/upload/v1672196178/www.efrencodes.com/tecnologies/twitter.svg',
 		ariaLabel: 'Visita mi perfil en Twitter',
+		nameEvent: 'twitter',
 		footer: false
 	}
 ]

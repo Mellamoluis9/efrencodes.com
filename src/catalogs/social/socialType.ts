@@ -13,4 +13,5 @@ export type Social = {
 	cover: string
 	ariaLabel?: string
 	footer: boolean
+	nameEvent?: string
 }

@@ -13,12 +13,13 @@ const NavBar = () => {
 				</span>
 			</p>
 			{SOCIAL.filter((social) => social.active === !true).map(
-				({ name, href, ariaLabel }) => (
+				({ name, href, ariaLabel, nameEvent }) => (
 					<CustomLink
 						href={href}
 						key={name}
 						isExternal={true}
 						aria-label={ariaLabel}
+						nameEvent={nameEvent}
 					>
 						<SocialMediaButton type={name} />
 					</CustomLink>
