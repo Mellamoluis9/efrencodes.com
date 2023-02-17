@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import { RoughNotation } from 'react-rough-notation'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Section, Header, Article, HeadSeo } from '@components/index'
+import { Section, Header, Article, HeadSeo } from '@/components'
 import { metadataDefault } from 'catalogs/metatags'
 import getPosts from 'utils/getPosts'
 
@@ -15,12 +16,19 @@ const HomePage = ({
 			</Head>
 			<Header>
 				<h1 className="text-3xl font-medium text-gray-900 leading-normal">
-					Efrén martínez
+					Hola! soy Efrén martínez
 				</h1>
-				<h2 className="text-2xl font-medium text-pink-500 leading-relaxed">
-					Desarrollador frontend
+				<h2 className="text-2xl font-medium text-pink-500 leading-relaxed mt-2">
+					<RoughNotation
+						type="highlight"
+						show={true}
+						animationDelay={1500}
+						color="#fce7f3"
+					>
+						Desarrollador Frontend
+					</RoughNotation>
 				</h2>
-				<p>
+				<p className="mt-2">
 					Desarrollador frontend especializado en{' '}
 					<span className="text-yellow-400 font-medium">
 						#javascript
@@ -33,6 +41,16 @@ const HomePage = ({
 						#typescript
 					</span>
 					.
+				</p>
+				<p className="mt-2">
+					<RoughNotation
+						type="highlight"
+						show={true}
+						animationDelay={1000}
+						color="#fef08a"
+					>
+						Estoy disponible para freelance.
+					</RoughNotation>
 				</p>
 			</Header>
 			<Section

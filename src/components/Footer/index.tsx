@@ -1,5 +1,5 @@
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import { CustomLink } from '@components/index'
+import { CustomLink } from '@/components'
 
 const Footer = () => {
 	return (

@@ -2,9 +2,10 @@ import Head from 'next/head'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeHighlight from 'rehype-highlight'
+import { RoughNotation } from 'react-rough-notation'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
-import { ImageWrapper, HeadSeo } from '@components/index'
+import { ImageWrapper, HeadSeo } from '@/components'
 import { metadataProps } from 'catalogs/metatags'
 
 const Articles = ({ data, content }) => {
@@ -40,10 +41,17 @@ const Articles = ({ data, content }) => {
 						thumbnail={data.cover}
 						alt={data.title}
 					/>
-					<h1 className="text-3xl font-medium text-gray-900 leading-normal pt-4">
-						{data.title}
+					<h1 className="text-3xl font-medium text-gray-900 leading-normal mt-5">
+						<RoughNotation
+							type="highlight"
+							show={true}
+							animationDelay={500}
+							color="#fce7f3"
+						>
+							{data.title}
+						</RoughNotation>
 					</h1>
-					<p className="italic text-sm pt-2">{data.description}</p>
+					<p className="italic text-sm mt-2">{data.description}</p>
 				</section>
 				<div
 					className="pt-4 pb-[150px] prose-a:text-pink-600 prose-a:underline prose-h2:text-xl prose-h2:font-medium

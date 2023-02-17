@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ImageWrapper, CustomLink } from '@components/index'
+import { ImageWrapper, CustomLink } from '@/components'
 import { Props } from './types'
 
 const Article: FC<Props> = ({
@@ -11,7 +11,7 @@ const Article: FC<Props> = ({
 }) => {
 	return (
 		<CustomLink href={href} isInternalLink={isExternal} nameEvent={href}>
-			<article className="flex py-8 px-4 gap-4 hover:shadow-sm hover:rounded hover:bg-gradient-to-r hover:from-indigo-50 hover:via-purple-50 hover:to-pink-50">
+			<article className="flex mt-6 py-8 px-4 gap-4 hover:shadow-sm hover:rounded hover:bg-gradient-to-r hover:from-indigo-50 hover:via-purple-50 hover:to-pink-50">
 				<ImageWrapper
 					thumbnail={cover}
 					alt={name}

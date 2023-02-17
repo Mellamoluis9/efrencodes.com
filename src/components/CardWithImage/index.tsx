@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { ImageWrapper, CustomLink } from '@components/index'
+import { ImageWrapper, CustomLink } from '@/components'
 import { Props } from './types'
 
 const CardWithImage: FC<Props> = ({ ...props }) => {

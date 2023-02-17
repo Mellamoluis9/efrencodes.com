@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
-import Item from '@components/Article'
+import Item from '@/components/Article'
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import { CustomLink } from '@components/index'
+import { CustomLink } from '@/components'
 
 const AboutHome = () => {
 	return (

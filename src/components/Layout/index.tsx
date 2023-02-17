@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { NavBar } from '@components/index'
+import { NavBar } from '@/components'
 import { Props } from './types'
 import { Inter } from '@next/font/google'
 

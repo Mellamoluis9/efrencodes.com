@@ -1,5 +1,6 @@
 import { socialMedia as SOCIAL } from 'catalogs/social'
-import { SocialMediaButton, CustomLink } from '@components/index'
+import { SocialMediaButton, CustomLink } from '@/components'
+import { RoughNotation } from 'react-rough-notation'
 
 const NavBar = () => {
 	return (
@@ -8,9 +9,16 @@ const NavBar = () => {
 				<p>Inicio</p>
 			</CustomLink>
 			<p className="font-semibold">
-				<span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-					Contáctame en:
-				</span>
+				<RoughNotation
+					type="box"
+					show={true}
+					animationDelay={500}
+					color="#c084fc"
+				>
+					<span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+						Contáctame en:
+					</span>
+				</RoughNotation>
 			</p>
 			{SOCIAL.filter((social) => social.active === !true).map(
 				({ name, href, ariaLabel, nameEvent }) => (

@@ -2,7 +2,8 @@ import { FC } from 'react'
 import {
 	LinkedInLogoIcon,
 	GitHubLogoIcon,
-	TwitterLogoIcon
+	TwitterLogoIcon,
+	EnvelopeOpenIcon
 } from '@radix-ui/react-icons'
 import { SocialTypeEnum } from 'catalogs/social/socialType'
 import { SocialMediaButtonProps } from './types'
@@ -18,6 +19,8 @@ const SocialMediaButton: FC<SocialMediaButtonProps> = ({
 		return <LinkedInLogoIcon color={color} height={size} width={size} />
 	else if (type === SocialTypeEnum.TWITTER)
 		return <TwitterLogoIcon color={color} height={size} width={size} />
+	else if (type === SocialTypeEnum.MAIL)
+		return <EnvelopeOpenIcon color={color} height={size} width={size} />
 }
 
 export default SocialMediaButton
