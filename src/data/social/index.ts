@@ -1,4 +1,4 @@
-import { Social, SocialTypeEnum } from 'catalogs/social/socialType'
+import { Social, SocialTypeEnum } from '@/data/social/socialType'
 
 export const socialMedia: Social[] = [
 	{

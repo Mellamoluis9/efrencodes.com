@@ -1,4 +1,4 @@
-import { Project } from 'catalogs/projects/projectType'
+import { Project } from '@/data/projects/projectType'
 
 export const project: Project[] = [
 	{

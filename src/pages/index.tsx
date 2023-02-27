@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { RoughNotation } from 'react-rough-notation'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Section, Header, Article, HeadSeo } from '@/components'
-import { metadataDefault } from 'catalogs/metatags'
+import { metadataDefault } from '@/data/metatags'
 import getPosts from 'utils/getPosts'
 
 const HomePage = ({

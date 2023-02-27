@@ -1,4 +1,4 @@
-import { tecnologiesProps } from 'catalogs/projects/projectType'
+import { tecnologiesProps } from '@/data/projects/projectType'
 export interface Props {
 	key: string
 	src: string

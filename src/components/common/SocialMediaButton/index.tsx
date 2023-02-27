@@ -5,7 +5,7 @@ import {
 	TwitterLogoIcon,
 	EnvelopeOpenIcon
 } from '@radix-ui/react-icons'
-import { SocialTypeEnum } from 'catalogs/social/socialType'
+import { SocialTypeEnum } from '@/data/social/socialType'
 import { SocialMediaButtonProps } from './types'
 
 const SocialMediaButton: FC<SocialMediaButtonProps> = ({

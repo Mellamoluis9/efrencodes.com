@@ -6,7 +6,7 @@ import { RoughNotation } from 'react-rough-notation'
 import getPost from 'utils/getPost'
 import getPosts from 'utils/getPosts'
 import { ImageWrapper, HeadSeo } from '@/components'
-import { metadataProps } from 'catalogs/metatags'
+import { metadataProps } from '@/data/metatags'
 
 const Articles = ({ data, content }) => {
 	const metadataPost: metadataProps = {

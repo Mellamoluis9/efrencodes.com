@@ -1,4 +1,4 @@
-import { socialMedia as SOCIAL } from 'catalogs/social'
+import { socialMedia as SOCIAL } from '@/data/social'
 import { SocialMediaButton, CustomLink } from '@/components'
 import { RoughNotation } from 'react-rough-notation'
 
