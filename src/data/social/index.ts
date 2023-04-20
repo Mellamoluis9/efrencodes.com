@@ -22,7 +22,7 @@ export const socialMedia: Social[] = [
 		footer: true
 	},
 	{
-		active: false,
+		active: true,
 		name: SocialTypeEnum.MAIL,
 		href: 'mailto:efrencodes@gmail.com',
 		content: 'Envíame un correo',

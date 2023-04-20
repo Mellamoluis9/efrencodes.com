@@ -49,7 +49,7 @@ const HomePage = ({
 						animationDelay={1000}
 						color="#fef08a"
 					>
-						Estoy disponible para freelance.
+						Estoy disponible para proyectos freelance.
 					</RoughNotation>
 				</p>
 			</Header>
