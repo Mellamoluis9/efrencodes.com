@@ -23,12 +23,21 @@ const HomePage = ({
 				</h2>
 				<p className="mt-2">
 					Frontend Engineer especializado en{' '}
-					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">#javascript</span>
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+						#javascript
+					</span>
 					. Enfocado en el desarrollo web principalmente con
 					tecnologías como{' '}
-					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-green-100 text-green-800">#vue</span>{' '}
-					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-blue-100 text-blue-800">#react</span>{' '}y{' '}
-					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">#typescript</span>
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-green-100 text-green-800">
+						#vue
+					</span>{' '}
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+						#react
+					</span>{' '}
+					y{' '}
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
+						#typescript
+					</span>
 				</p>
 				<p className="mt-2">
 					Estoy disponible para proyectos freelance.
