@@ -10,10 +10,10 @@ const NavBar = () => {
 			</CustomLink>
 			<p className="font-semibold">
 				<RoughNotation
-					type="box"
+					type="circle"
 					show={true}
 					animationDelay={500}
-					color="#c084fc"
+					color="#a78bfa"
 				>
 					<span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
 						Contáctame en:

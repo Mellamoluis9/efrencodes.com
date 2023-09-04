@@ -23,7 +23,7 @@ export const metadataDefault: metadataProps = {
 	description:
 		'Desarrollador Frontend especializado en #javascript #vue #react #typescript. Aprendiendo #flutter #dart',
 	keywords:
-		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript,tailwindcss',
+		'querétaro,tecnologia,software,web,desarrollo,fullstack,software engineer,developer,jamstack,vuejs,reactjs,méxico,typescript,tailwindcss,cypress',
 	openGraph: {
 		url: 'https://efrencodes.com',
 		siteName: 'Efrén Martínez - Desarrollador Frontend',

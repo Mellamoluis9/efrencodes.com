@@ -16,41 +16,22 @@ const HomePage = ({
 			</Head>
 			<Header>
 				<h1 className="text-3xl font-medium text-gray-900 leading-normal">
-					Hola! soy Efrén martínez
+					Efren Martinez
 				</h1>
 				<h2 className="text-2xl font-medium text-pink-500 leading-relaxed mt-2">
-					<RoughNotation
-						type="highlight"
-						show={true}
-						animationDelay={1500}
-						color="#fce7f3"
-					>
-						Desarrollador Frontend
-					</RoughNotation>
+					Frontend Engineer
 				</h2>
 				<p className="mt-2">
-					Desarrollador frontend especializado en{' '}
-					<span className="text-yellow-400 font-medium">
-						#javascript
-					</span>
+					Frontend Engineer especializado en{' '}
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">#javascript</span>
 					. Enfocado en el desarrollo web principalmente con
 					tecnologías como{' '}
-					<span className="text-green-500 font-medium">#vue</span>,{' '}
-					<span className="text-blue-500 font-medium">#react</span> y{' '}
-					<span className="text-cyan-500 font-medium">
-						#typescript
-					</span>
-					.
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-green-100 text-green-800">#vue</span>{' '}
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-blue-100 text-blue-800">#react</span>{' '}y{' '}
+					<span className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">#typescript</span>
 				</p>
 				<p className="mt-2">
-					<RoughNotation
-						type="highlight"
-						show={true}
-						animationDelay={1000}
-						color="#fef08a"
-					>
-						Estoy disponible para proyectos freelance.
-					</RoughNotation>
+					Estoy disponible para proyectos freelance.
 				</p>
 			</Header>
 			<Section
